@@ -76,7 +76,7 @@
     }
     .hero-bg {
       position: absolute; inset: 0; z-index: 0;
-      background: url('../images/c1edd0b865dfd54b37b16e931cebe39f.jpg') center/cover no-repeat;
+      background: url('../images/sexteto-background.jpg') center/cover no-repeat;
     }
     .hero-bg::after {
       content: ''; position: absolute; inset: 0;
@@ -139,20 +139,38 @@
     .members-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
     }
-    .member-card { background: var(--dark3); border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); transition: transform .3s, box-shadow .3s; }
+    .member-card { background: var(--dark3); border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); transition: transform .3s, box-shadow .3s; cursor: pointer; }
     .member-card:hover { transform: translateY(-4px); box-shadow: 0 15px 40px var(--card-shadow); }
-    .member-card-img { width: 100%; height: 280px; object-fit: cover; display: block; }
-    .member-card-body { padding: 1.5rem; }
-    .member-card-body h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: .6rem; color: var(--gold-light); }
-    .member-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; }
+    .member-card-img-wrap { position: relative; height: 280px; overflow: hidden; }
+    .member-card-img-wrap .img-bw,
+    .member-card-img-wrap .img-color {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; transition: opacity .45s ease;
+    }
+    .member-card-img-wrap .img-color { opacity: 0; }
+    .member-card-name {
+      padding: 1rem 1.5rem .4rem;
+      font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--gold-light);
+    }
+    .member-card-body {
+      max-height: 0; overflow: hidden;
+      transition: max-height .45s ease;
+      padding: 0 1.5rem;
+    }
+    .member-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; padding-bottom: 1.2rem; }
+    .member-card:hover .img-color, .member-card.is-open .img-color { opacity: 1; }
+    .member-card:hover .img-bw,    .member-card.is-open .img-bw    { opacity: 0; }
+    .member-card:hover .member-card-body, .member-card.is-open .member-card-body { max-height: 400px; }
 
     /* STAFF */
     .staff-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
       margin-top: 3rem;
     }
-    .staff-card { background: var(--dark3); border: 1px solid var(--border-alpha); border-radius: 8px; padding: 1.8rem; text-align: center; transition: border-color .3s; }
+    .staff-card { background: var(--dark3); border: 1px solid var(--border-alpha); border-radius: 8px; text-align: center; transition: border-color .3s; overflow: hidden; padding: 0; }
     .staff-card:hover { border-color: var(--gold); }
+    .staff-card-img { width: 100%; height: 180px; object-fit: cover; object-position: top; display: block; }
+    .staff-card-content { padding: 1.8rem; }
     .staff-card h4 { font-family: 'Playfair Display', serif; font-size: 1.05rem; margin-bottom: .3rem; color: var(--gold-light); }
     .staff-card .staff-role { font-size: .75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); margin-bottom: 1rem; display: block; }
     .staff-card p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; }
@@ -226,7 +244,7 @@
     #contact { background: var(--dark); position: relative; overflow: hidden; }
     .contact-bg {
       position: absolute; inset: 0; z-index: 0;
-      background: url('../images/93c613d099330b75f4b02804186ecfab.jpg') center/cover no-repeat fixed;
+      background: url('../images/sexteto-footer.jpg') center/cover no-repeat fixed;
       opacity: .15;
     }
     [data-theme="light"] .contact-bg { opacity: .1; }
@@ -350,7 +368,7 @@
 
     <div class="about-grid">
       <div class="about-photo">
-        <img src="../images/bf4d01dddf0840e925b6b934f7deea79.jpg" alt="GMajor6 – skupinová fotka" />
+        <img src="../images/sexteto-onas-hori.jpg" alt="GMajor6 – skupinová fotka" />
       </div>
       <div class="about-text">
         <h3>Jsme parta z Pardubic, která se rozhodla to, co miluje posunout o kousek dál.</h3>
@@ -365,49 +383,67 @@
       <div class="members-grid">
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/100eff307ca9c41a2c65b25f1d767729.jpg" alt="Adéla Šrámková" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/adelasramkova-cb.jpg"  alt="Adéla Šrámková" />
+            <img class="img-color" src="../images/adelasramkova-bar.jpg" alt="Adéla Šrámková" />
+          </div>
+          <div class="member-card-name">Adéla Šrámková</div>
           <div class="member-card-body">
-            <h4>Adéla Šrámková</h4>
             <p>Naše Ádys vystudovala molekulární biologii a biochemii na Univerzitě Karlově, takže pokud mluví o buňkách, raději jen přikyvujeme. Od malička se věnuje tanci, miluje spánek, yogu a kávu, která je nedílnou součástí jejího starter packu hlavně ve zkouškovém období. Vysoké tóny, které na našich vystoupeních uslyšíte, má na svědomí právě Ádys. Ty nejvyšší z tónů ovšem slyší už jen zvířata.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/249fbf14d8f636e40c64e15008d70459.jpg" alt="Alice Vacková" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/alicevackova-cb.jpg"  alt="Alice Vacková" />
+            <img class="img-color" src="../images/alicevackova-bar.jpg" alt="Alice Vacková" />
+          </div>
+          <div class="member-card-name">Alice Vacková</div>
           <div class="member-card-body">
-            <h4>Alice Vacková</h4>
             <p>Hudba Áju provází od velmi útlého věku, kdy svou hudební kariéru odstartovala v pěveckém sboru a později k ní připojila hru na vícero hudebních nástrojů. Ačkoliv se k sólovému zpěvu se dostala až ve svých čtrnácti letech, byl pro ni jasnou volbou a stal se její nedílnou součástí. Ája pracuje jako paní učitelka v mateřské školce a tím se jí podařilo propojit dvě největší záliby, a to hudbu a práci s dětmi. Hudba je pro ni životní radostí, kterou může díky své práci denně sdílet se svým okolím v různých podobách.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/91897d57713e0e6c8bd3783401e40d15.jpg" alt="Berta Elisabeth Hochmanová" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/elisabethhochmanova-cb.jpg"  alt="Berta Elisabeth Hochmanová" />
+            <img class="img-color" src="../images/elisabethhochmanova-bar.jpg" alt="Berta Elisabeth Hochmanová" />
+          </div>
+          <div class="member-card-name">Berta Elisabeth Hochmanová</div>
           <div class="member-card-body">
-            <h4>Berta Elisabeth Hochmanová</h4>
             <p>Berta je dcerou z rodu Vikingů a vyznavačů tatoo umění. Studuje na vysoké škole sociální patologii a prevenci. Její volba oboru byla dána hlavně tím, že její dlouholetou zálibou je true crime. Kromě studií se nyní aktivně věnuje práci koordinátorky zdravotní péče. Stala se taktéž v posledních letech baristkou, takže se za barem cítí stejně pohodově jako na pódiu. V budoucnu by se chtěla zabývat sociální prací a psychoterapií, ale v srdci samozřejmě bude vždy baristkou. Když ji zrovna nepotkáte na koncertě či v kavárně, tak ve svém volnu cvičí, čte si, opečovává svého kocoura Vincenta a samozřejmě také zpívá.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/d90a143687c776286f1b6d40048859d5.jpg" alt="Adéla Gottvaldová" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/adelagottvaldova-cb.jpg"  alt="Adéla Gottvaldová" />
+            <img class="img-color" src="../images/adelagottvaldova-bar.jpg" alt="Adéla Gottvaldová" />
+          </div>
+          <div class="member-card-name">Adéla Gottvaldová</div>
           <div class="member-card-body">
-            <h4>Adéla Gottvaldová</h4>
             <p>Áďa se hudbě taktéž věnuje od malička, ale původně začínala s hrou na klasickou kytaru. Zpěv přidala až později a nyní se mu věnuje naplno. Nyní se za kytaru jen příležitostně schovává na pódiu. Pochází z rodiny lékařů, ale rodinné řemeslo úplně nepřevzala, a tak se věnuje studiu práva v Olomouci. Když se zrovna neučí, dohání spánek a sportuje - hlavně běhá a leze po horách. Třeba se s ní jednou potkáte u rozvodového řízení v soudní síni, tak opatrně.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/8a910b9b8b63a50e4643cc80ad3def71.jpg" alt="Kateřina Čížková" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/katerinacizkova-cb.jpg"  alt="Kateřina Čížková" />
+            <img class="img-color" src="../images/katerinacizkova-bar.jpg" alt="Kateřina Čížková" />
+          </div>
+          <div class="member-card-name">Kateřina Čížková</div>
           <div class="member-card-body">
-            <h4>Kateřina Čížková</h4>
             <p>Káťu provází hudba a celkově umění od dětství – od baletu přes hru na klavír až po zpěv, který se stal nakonec její největší vášní. Studuje na vysoké škole v Praze obor bezpečnostní management a volný čas vyplňuje prací v kavárně nebo procházkami v přírodě se svým anglickým setrem Artushem. Zpívání je pro ni srdeční záležitost, ať už při sólovém vystupování nebo v rámci sexteta. Hudba pro ni zůstává tím nejkrásnějším relaxem i radostí.</p>
           </div>
         </div>
 
         <div class="member-card">
-          <img class="member-card-img" src="../images/daeda06cf9493f3a3384164e3d6e8f38.jpg" alt="Matěj Drtina" />
+          <div class="member-card-img-wrap">
+            <img class="img-bw"    src="../images/matejdrtina-cb.jpg"  alt="Matěj Drtina" />
+            <img class="img-color" src="../images/matejdrtina-bar.jpg" alt="Matěj Drtina" />
+          </div>
+          <div class="member-card-name">Matěj Drtina</div>
           <div class="member-card-body">
-            <h4>Matěj Drtina</h4>
             <p>Matěj je jediným zástupcem mužského hlasu a zároveň nejmladším členem našeho pěveckého seskupení. Studuje na Masarykově univerzitě v Brně obory sociologie a soudobé dějiny. Zároveň jej můžete potkat v baru Everything, kde vám jakožto zkušený barman namíchá drink dle Vašeho gusta. Ve svém volnu rád čte poezii, zajímá se o architekturu a protože je opravdu renesanční člověk, tak i sportuje - badminton a fitness centrum mu jsou nejbližší. Z celého sexteta nosí nejlepší svetry a často svými hlasovými zprávami prolamuje rádiové ticho. Matějův sametový baryton je pro Gmajor6 nepostradatelnou součástí stejně tak, jako jeho smysl pro humor a energie, která rozezní i ticho mezi tóny.</p>
           </div>
         </div>
@@ -417,19 +453,28 @@
       <!-- VEDENÍ -->
       <div class="staff-grid">
         <div class="staff-card">
-          <h4>Mgr. Zdeňka Grossová</h4>
-          <span class="staff-role">Umělecké vedení / korepetitor</span>
-          <p>Hlasová poradkyně a pedagožka zpěvu na ZUŠ Pardubice, Havlíčkova 925. Současně také příležitostná korepetitorka. V její třídě jsme našli první společné tóny a právě tam se zrodilo naše uskupení.</p>
+          <img class="staff-card-img" src="../images/zdenkagrossova.jpg" alt="Mgr. Zdeňka Grossová" />
+          <div class="staff-card-content">
+            <h4>Mgr. Zdeňka Grossová</h4>
+            <span class="staff-role">Umělecké vedení / korepetitor</span>
+            <p>Hlasová poradkyně a pedagožka zpěvu na ZUŠ Pardubice, Havlíčkova 925. Současně také příležitostná korepetitorka. V její třídě jsme našli první společné tóny a právě tam se zrodilo naše uskupení.</p>
+          </div>
         </div>
         <div class="staff-card">
-          <h4>MgA. Petr Hostinský</h4>
-          <span class="staff-role">Korepetitor</span>
-          <p>Výjimečný varhaník, klávesista a pedagog. Působí na Konzervatoři v Pardubicích, je členem populární kapely Sto zvířat a koncertuje také jako sólista.</p>
+          <img class="staff-card-img" src="../images/petrhostinksy.jpg" alt="MgA. Petr Hostinský" />
+          <div class="staff-card-content">
+            <h4>MgA. Petr Hostinský</h4>
+            <span class="staff-role">Korepetitor</span>
+            <p>Výjimečný varhaník, klávesista a pedagog. Působí na Konzervatoři v Pardubicích, je členem populární kapely Sto zvířat a koncertuje také jako sólista.</p>
+          </div>
         </div>
         <div class="staff-card">
-          <h4>Martin Kudrna</h4>
-          <span class="staff-role">Korepetitor</span>
-          <p>Pardubický klavírista, akordeonista, skladatel a pedagog. Působí hned v několika hudebních projektech, například v chlapeckém sboru Bonifantes, Chanson Trio Coucou, Beerberries a dalších.</p>
+          <img class="staff-card-img" src="../images/martinkudrna.jpg" alt="Martin Kudrna" />
+          <div class="staff-card-content">
+            <h4>Martin Kudrna</h4>
+            <span class="staff-role">Korepetitor</span>
+            <p>Pardubický klavírista, akordeonista, skladatel a pedagog. Působí hned v několika hudebních projektech, například v chlapeckém sboru Bonifantes, Chanson Trio Coucou, Beerberries a dalších.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -447,7 +492,7 @@
     <div class="services-grid">
 
       <div class="service-card">
-        <img class="service-card-img" src="../images/2632b54508aa040566d6cd7a2be0f1e3.jpg" alt="Svatby – obřady" />
+        <img class="service-card-img" src="../images/svatby.jpg" alt="Svatby – obřady" />
         <div class="service-card-body">
           <h3>Svatby – obřady</h3>
           <p class="service-tagline">Dojemná živá hudba, která podtrhne atmosféru vašeho výjimečného dne.</p>
@@ -456,7 +501,7 @@
       </div>
 
       <div class="service-card">
-        <img class="service-card-img" src="../images/4f4eee9e35bf2138c9382b294db8c684.jpg" alt="Koncerty" />
+        <img class="service-card-img" src="../images/koncety.jpg" alt="Koncerty" />
         <div class="service-card-body">
           <h3>Koncerty</h3>
           <p class="service-tagline">Energický koncertní program, který vtáhne publikum od první noty.</p>
@@ -465,7 +510,7 @@
       </div>
 
       <div class="service-card">
-        <img class="service-card-img" src="../images/4edee5594f380e1e07eae90cbeaf3857.jpg" alt="Společenské akce" />
+        <img class="service-card-img" src="../images/spolecenske_akce.jpg" alt="Společenské akce" />
         <div class="service-card-body">
           <h3>Společenské akce</h3>
           <p class="service-tagline">Stylové hudební zpestření pro plesy, večírky, firemní eventy i slavnostní příležitosti.</p>
@@ -497,7 +542,7 @@
 
     <div class="concert-feature">
       <div class="concert-poster">
-        <img src="../images/1752504afe3c46e35efc005aad097fcd.jpg" alt="Plakát – koncert Alice Vackové a Adély Gottvaldové" />
+        <img src="../images/koncert260306.jpg" alt="Plakát – koncert 6. března 2026" />
       </div>
       <div class="concert-detail">
         <h3>Koncert Alice Vackové a Adély Gottvaldové</h3>
@@ -527,7 +572,7 @@
     <div class="past-grid">
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/0aacbdfe23de3ba205e1a5224edfcdab.jpg" alt="Ceny města Pardubic" /></div>
+        <div class="past-card-header"><img src="../images/slavnostni_predavani.jpg" alt="Ceny města Pardubic" /></div>
         <div class="past-card-body">
           <h3>Slavnostní předávání cen města Pardubic</h3>
           <div class="past-meta"><span>📅 13. 5. 2025</span><span>📍 Pardubice</span></div>
@@ -536,7 +581,7 @@
       </div>
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/ccece98e291b6cc3be07707c6c822e7c.jpg" alt="Koncert v Kitchenery" /></div>
+        <div class="past-card-header"><img src="../images/kitchenery.jpg" alt="Koncert v Kitchenery" /></div>
         <div class="past-card-body">
           <h3>Koncert v Kitchenery</h3>
           <div class="past-meta"><span>📅 léto 2025</span><span>📍 Pardubice</span></div>
@@ -545,7 +590,7 @@
       </div>
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/a734db3d55674d3701ec994d169ee48c.jpg" alt="Koncert v R klubu Chrudim" /></div>
+        <div class="past-card-header"><img src="../images/r_klub_chrudim.jpg" alt="Koncert v R klubu Chrudim" /></div>
         <div class="past-card-body">
           <h3>Koncert v R klubu Chrudim</h3>
           <div class="past-meta"><span>📅 12. 4. 2025</span><span>📍 Chrudim</span></div>
@@ -554,7 +599,7 @@
       </div>
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/aaa8e9f779bf73f23ad2a7c5a888352a.jpg" alt="ZUŠ Open" /></div>
+        <div class="past-card-header"><img src="../images/zus_open.jpg" alt="ZUŠ Open" /></div>
         <div class="past-card-body">
           <h3>ZUŠ Open</h3>
           <div class="past-meta"><span>📅 30. 5. 2024</span><span>📍 Dům hudby, Pardubice</span></div>
@@ -563,7 +608,7 @@
       </div>
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/bb3975bd07463c3e13e2d2466eaf96aa.jpg" alt="Absolventský koncert" /></div>
+        <div class="past-card-header"><img src="../images/absolventsky_koncert.jpg" alt="Absolventský koncert" /></div>
         <div class="past-card-body">
           <h3>Absolventský koncert ZUŠ Havlíčkova</h3>
           <div class="past-meta"><span>📅 12. 6. 2023</span><span>📍 Magistrát města, Pardubice</span></div>
@@ -572,7 +617,7 @@
       </div>
 
       <div class="past-card">
-        <div class="past-card-header"><img src="../images/65e23b4f9dc2d1bba8282ba890ae22b2.jpg" alt="Bar Everything" /></div>
+        <div class="past-card-header"><img src="../images/koncertovani_v_everythingu.jpg" alt="Bar Everything" /></div>
         <div class="past-card-body">
           <h3>Koncertování v baru Everything</h3>
           <div class="past-meta"><span>📅 opakovaně</span><span>📍 Pardubice</span></div>
@@ -587,17 +632,17 @@
       <h3>Naše koncertování v Everything</h3>
       <p class="gallery-sub">V baru Everything je nám jako doma — tady je pár momentek z našich vystoupení.</p>
       <div class="gallery-grid">
-        <a class="tall"><img src="../images/19571d5cca80903dc13f25def8d18b15.jpg" alt="Koncert v Everything" /></a>
-        <a><img src="../images/b3857297a0b9087908d035d5d49621d7.jpg" alt="Koncert v Everything" /></a>
+        <a class="tall"><img src="../images/1160794bf4a6b05114a2fcd4bbf0fe99.jpg" alt="Koncert v Everything" /></a>
+        <a><img src="../images/19ab2d1a6a79d0933deeea1b420594f0.jpg" alt="Koncert v Everything" /></a>
         <a><img src="../images/546480128718f637048a51e03593e761.jpg" alt="Koncert v Everything" /></a>
-        <a class="tall"><img src="../images/a734db3d55674d3701ec994d169ee48c.jpg" alt="Koncert v Everything" /></a>
+        <a class="tall"><img src="../images/70f28e88880756eece5fa5d9815d6052.jpg" alt="Koncert v Everything" /></a>
         <a><img src="../images/70e7b93e34d0f85725d0f864ac1d3395.jpg" alt="Koncert v Everything" /></a>
-        <a class="wide"><img src="../images/4f4eee9e35bf2138c9382b294db8c684.jpg" alt="Koncert v Everything" /></a>
+        <a class="wide"><img src="../images/91b7206225f8b2b4fb0080d105a698bc.jpg" alt="Koncert v Everything" /></a>
         <a><img src="../images/63261fd2b1a7ef0423af1077ab39076b.jpg" alt="Koncert v Everything" /></a>
         <a><img src="../images/c7156aa07ca61fa08962039761957974.jpg" alt="Koncert v Everything" /></a>
-        <a class="wide"><img src="../images/fcbb8ecd40006ed80cc2ae01df287293.jpg" alt="Koncert v Everything" /></a>
+        <a class="wide"><img src="../images/a1aac0c301d86c969572ce68cbe1a78a.jpg" alt="Koncert v Everything" /></a>
         <a><img src="../images/ef692b828ba7a6a046f1def1f4f189fe.jpg" alt="Koncert v Everything" /></a>
-        <a><img src="../images/52853c91a82d73d4a43eb474127a2ecc.jpg" alt="Koncert v Everything" /></a>
+        <a><img src="../images/c735eaddedc675585524b5957bc960b7.jpg" alt="Koncert v Everything" /></a>
       </div>
     </div>
   </div>
@@ -760,6 +805,13 @@
       setTheme(current === 'light' ? 'dark' : 'light');
     });
   })();
+
+  // Mobile tap pro kartičky členů
+  document.querySelectorAll('.member-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      card.classList.toggle('is-open');
+    });
+  });
 </script>
 </body>
 </html>
