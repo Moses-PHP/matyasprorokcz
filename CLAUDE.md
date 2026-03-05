@@ -10,16 +10,22 @@
 
 ---
 
-## Repository State (as of initial commit)
+## Repository State
 
 ```
 matyasprorokcz/
 ├── .git/
-├── README.md       # Project title and one-line description
-└── CLAUDE.md       # This file
+├── .github/
+│   └── workflows/
+│       ├── deploy.yml   # FTP deployment to public_html on push to main
+│       └── claude.yml   # Claude AI integration via GitHub Actions
+├── .ftpignore           # Files excluded from FTP deployment
+├── index.html           # Main HTML entry point
+├── style.css            # Global styles
+├── script.js            # Interactive JS (cursor glow, animations, easter egg)
+├── README.md            # Project title and one-line description
+└── CLAUDE.md            # This file
 ```
-
-No technology stack has been chosen yet. When source code is added, update the sections below accordingly.
 
 ---
 
@@ -76,33 +82,44 @@ Since the project has no build system yet, these are placeholder conventions to 
 
 ---
 
-## Technology Stack (TBD)
+## Technology Stack
 
-The stack has not been defined yet. When it is, document:
+- **Language/framework:** Vanilla HTML / CSS / JavaScript (no build step)
+- **Deployment:** FTP via GitHub Actions (`SamKirkland/FTP-Deploy-Action`)
+- **AI integration:** Claude via GitHub Actions (`anthropics/claude-code-action`)
 
-- **Language/framework:** (e.g., PHP/Laravel, JavaScript/Next.js, HTML/CSS)
-- **Package manager:** (e.g., npm, composer, pip)
-- **Build tool:** (e.g., Vite, webpack)
-- **Test runner:** (e.g., PHPUnit, Jest, Vitest)
-- **Linter/formatter:** (e.g., ESLint, Prettier, PHP CS Fixer)
-
-### Common Commands (placeholder — update when stack is set)
+### Common Commands
 
 ```bash
-# Install dependencies
-# <command here>
+# No build step needed — open index.html directly in a browser
+# or serve locally with any static file server, e.g.:
+npx serve .
 
-# Run development server
-# <command here>
+# Deploy: push to the `main` branch — GitHub Actions handles FTP upload automatically
+```
 
-# Build for production
-# <command here>
+---
 
-# Run tests
-# <command here>
+## CI/CD
 
-# Lint/format code
-# <command here>
+### Deploy workflow (`.github/workflows/deploy.yml`)
+
+Triggers on every push to `main` and uploads site files to the FTP server using secrets:
+- `FTP_SERVER`
+- `FTP_USERNAME`
+- `FTP_PASSWORD`
+
+Files listed in `.ftpignore` (e.g. `README.md`, `CLAUDE.md`, `.github/`) are excluded from the upload.
+
+### Claude AI workflow (`.github/workflows/claude.yml`)
+
+Enables AI assistance directly inside GitHub issues and pull requests. Mention `@claude` in any issue or PR comment (or in the issue body when opening/assigning) to trigger the workflow.
+
+**Required secret:** `ANTHROPIC_API_KEY` — set this in *Settings → Secrets and variables → Actions* for the repository.
+
+**Example usage:**
+```
+@claude Please review this CSS change and suggest improvements.
 ```
 
 ---
@@ -131,7 +148,6 @@ When source code is added, follow these general principles:
 
 Keep this file current as the project evolves:
 
-- When a technology stack is chosen, fill in the **Technology Stack** section.
-- When build/test/lint commands are established, update **Common Commands**.
-- When deployment is configured, add a **Deployment** section.
-- When CI/CD is set up, add a **CI/CD** section.
+- Update **Repository State** when new files are added.
+- Update **Technology Stack** if the stack changes (e.g. a framework is introduced).
+- Update **CI/CD** if new workflows are added or existing ones are modified.
