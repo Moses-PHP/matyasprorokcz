@@ -159,7 +159,7 @@
       transition: max-height .45s ease;
       padding: 0 1.5rem;
     }
-    .member-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; padding-bottom: 1.2rem; }
+    .member-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; padding-top: .8rem; padding-bottom: 1.2rem; }
     .member-more-btn {
       display: none;
       width: 100%; border: none; background: transparent;
@@ -214,9 +214,11 @@
     #concerts .container { position: relative; z-index: 1; }
     .concert-feature {
       display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;
-      background: var(--dark3); border: 1px solid var(--border-alpha); border-radius: 12px;
+      background: rgba(30,30,30,0.55); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-alpha); border-radius: 12px;
       padding: 2rem; transition: border-color .3s;
     }
+    [data-theme="light"] .concert-feature { background: rgba(229,226,220,0.55); }
     .concert-feature:hover { border-color: var(--gold); }
     .concert-poster { width: 220px; border-radius: 8px; overflow: hidden; flex-shrink: 0; }
     .concert-poster img { width: 100%; display: block; border-radius: 8px; }
