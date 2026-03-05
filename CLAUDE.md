@@ -27,9 +27,17 @@ No technology stack has been chosen yet. When source code is added, update the s
 
 ### Branch Strategy
 
-- **Default branch:** `master`
-- **Feature/AI work branches:** `claude/<description>-<session-id>` (e.g., `claude/claude-md-mmd7cfzzc0iht35x-eFLhZ`)
-- Never push directly to `master` without explicit permission from the repository owner.
+- **Default branch:** `main`
+- **Feature/AI work branches (when needed):** `claude/<description>-<session-id>`
+
+### Direct pushes to `main`
+
+- The repository owner may temporarily **disable branch protection** for `main`.
+- **If pushing directly to `main` is allowed**, the assistant may commit and push straight to `main`.
+- **If pushing to `main` is blocked for any reason** (e.g., branch protection enabled, required status checks, missing permissions), the assistant must:
+  1. create a branch `claude/<description>-<session-id>`,
+  2. push changes there, and
+  3. ask the owner whether to open a PR (do not open a PR unless explicitly requested).
 
 ### Commit Messages
 
@@ -41,6 +49,9 @@ No technology stack has been chosen yet. When source code is added, update the s
 ### Git Operations
 
 ```bash
+# Push to main (only if allowed)
+git push origin main
+
 # Push to a feature branch
 git push -u origin <branch-name>
 
@@ -71,7 +82,7 @@ Since the project has no build system yet, these are placeholder conventions to 
 
 ### After Completing Work
 
-1. Push changes to the designated branch.
+1. Push changes to the designated branch (prefer `main` if direct pushes are allowed).
 2. Do not open pull requests unless explicitly requested.
 
 ---
