@@ -172,11 +172,30 @@
     .member-more-btn:hover { background: rgba(201,168,76,.07); }
     .member-card.is-open .img-color { opacity: 1; }
     .member-card.is-open .img-bw    { opacity: 0; }
-    .member-card.is-open .member-card-body { max-height: 400px; }
     @media (hover: hover) {
       .member-card:hover .img-color { opacity: 1; }
       .member-card:hover .img-bw    { opacity: 0; }
-      .member-card:hover .member-card-body { max-height: 400px; }
+    }
+
+    /* Full-width expansion panel — appears below the row, no jumping */
+    .member-expand-panel {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
+    .member-expand-panel.is-open { grid-template-rows: 1fr; }
+    .member-expand-panel-inner {
+      min-height: 0; overflow: hidden;
+      padding: 0 2rem;
+      transition: padding 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .member-expand-panel.is-open .member-expand-panel-inner { padding: 1.4rem 2rem 1.8rem; }
+    .member-expand-panel-inner p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; }
+    .member-expand-panel-name {
+      font-family: 'Playfair Display', serif; font-size: 1rem; font-style: italic;
+      color: var(--gold-light); margin-bottom: .5rem;
     }
 
     /* STAFF */
@@ -855,15 +874,66 @@
     });
   })();
 
-  // Mobile tap pro kartičky členů
-  document.querySelectorAll('.member-card').forEach(function(card) {
-    card.addEventListener('click', function(e) {
-      if (window.innerWidth <= 768 && !e.target.closest('.member-more-btn')) return;
-      card.classList.toggle('is-open');
-      var btn = card.querySelector('.member-more-btn');
-      if (btn) btn.textContent = card.classList.contains('is-open') ? 'Méně ↑' : 'Více ↓';
+  // Member cards — expand below the row (no layout jumping)
+  (function() {
+    var cards = Array.from(document.querySelectorAll('.member-card'));
+    var grid  = document.querySelector('.members-grid');
+    if (!grid || !cards.length) return;
+
+    var cols = 3;
+    var panels = [];
+
+    // Insert a full-width panel after every 3rd card
+    for (var i = cols - 1; i < cards.length; i += cols) {
+      var panel = document.createElement('div');
+      panel.className = 'member-expand-panel';
+      panel.innerHTML = '<div class="member-expand-panel-inner"></div>';
+      cards[i].after(panel);
+      panels.push(panel);
+    }
+
+    var activeCard = null;
+
+    function closeAll() {
+      panels.forEach(function(p) {
+        p.classList.remove('is-open');
+        p.querySelector('.member-expand-panel-inner').innerHTML = '';
+      });
+      cards.forEach(function(c) {
+        c.classList.remove('is-open');
+        var btn = c.querySelector('.member-more-btn');
+        if (btn) btn.textContent = 'Více ↓';
+      });
+      activeCard = null;
+    }
+
+    cards.forEach(function(card, idx) {
+      var rowIdx   = Math.floor(idx / cols);
+      var rowPanel = panels[rowIdx];
+      var btn      = card.querySelector('.member-more-btn');
+
+      card.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768 && !e.target.closest('.member-more-btn')) return;
+
+        if (activeCard === card) {
+          closeAll();
+          return;
+        }
+
+        closeAll();
+
+        card.classList.add('is-open');
+        if (btn) btn.textContent = 'Méně ↑';
+        activeCard = card;
+
+        var name = card.querySelector('.member-card-name').textContent.trim();
+        var bio  = card.querySelector('.member-card-body').innerHTML;
+        rowPanel.querySelector('.member-expand-panel-inner').innerHTML =
+          '<div class="member-expand-panel-name">' + name + '</div>' + bio;
+        rowPanel.classList.add('is-open');
+      });
     });
-  });
+  })();
 </script>
 </body>
 </html>
