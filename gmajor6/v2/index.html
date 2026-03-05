@@ -167,6 +167,16 @@
       padding: 0 1.5rem;
     }
     .member-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; padding-bottom: 1.2rem; }
+    .member-more-btn {
+      display: none;
+      width: 100%; border: none; background: transparent;
+      padding: .65rem 1.5rem;
+      font-size: .72rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--gold); cursor: pointer; font-family: inherit;
+      border-top: 1px solid var(--card-border);
+      transition: color .25s, background .25s;
+    }
+    .member-more-btn:hover { background: rgba(201,168,76,.07); }
     .member-card:hover .img-color, .member-card.is-open .img-color { opacity: 1; }
     .member-card:hover .img-bw,    .member-card.is-open .img-bw    { opacity: 0; }
     .member-card:hover .member-card-body, .member-card.is-open .member-card-body { max-height: 400px; }
@@ -329,6 +339,7 @@
       .nav-links a { font-size: 1rem; color: var(--text); padding: 1rem 2rem; display: block; }
       .nav-links .nav-cta { background: var(--gold) !important; color: var(--dark) !important; margin: 1.5rem 2rem 0; border-radius: 4px; text-align: center; }
       .hamburger { display: flex; z-index: 101; }
+      .member-more-btn { display: block; }
       .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .about-photo { order: -1; }
       .members-grid { grid-template-columns: 1fr; }
@@ -409,6 +420,7 @@
             <img class="img-color" src="../images/adelasramkova-bar.jpg" alt="Adéla Šrámková" />
             <div class="member-card-name">Adéla Šrámková</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Naše Ádys vystudovala molekulární biologii a biochemii na Univerzitě Karlově, takže pokud mluví o buňkách, raději jen přikyvujeme. Od malička se věnuje tanci, miluje spánek, yogu a kávu, která je nedílnou součástí jejího starter packu hlavně ve zkouškovém období. Vysoké tóny, které na našich vystoupeních uslyšíte, má na svědomí právě Ádys. Ty nejvyšší z tónů ovšem slyší už jen zvířata.</p>
           </div>
@@ -420,6 +432,7 @@
             <img class="img-color" src="../images/alicevackova-bar.jpg" alt="Alice Vacková" />
             <div class="member-card-name">Alice Vacková</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Hudba Áju provází od velmi útlého věku, kdy svou hudební kariéru odstartovala v pěveckém sboru a později k ní připojila hru na vícero hudebních nástrojů. Ačkoliv se k sólovému zpěvu se dostala až ve svých čtrnácti letech, byl pro ni jasnou volbou a stal se její nedílnou součástí. Ája pracuje jako paní učitelka v mateřské školce a tím se jí podařilo propojit dvě největší záliby, a to hudbu a práci s dětmi. Hudba je pro ni životní radostí, kterou může díky své práci denně sdílet se svým okolím v různých podobách.</p>
           </div>
@@ -431,6 +444,7 @@
             <img class="img-color" src="../images/elisabethhochmanova-bar.jpg" alt="Berta Elisabeth Hochmanová" />
             <div class="member-card-name">Berta Elisabeth Hochmanová</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Berta je dcerou z rodu Vikingů a vyznavačů tatoo umění. Studuje na vysoké škole sociální patologii a prevenci. Její volba oboru byla dána hlavně tím, že její dlouholetou zálibou je true crime. Kromě studií se nyní aktivně věnuje práci koordinátorky zdravotní péče. Stala se taktéž v posledních letech baristkou, takže se za barem cítí stejně pohodově jako na pódiu. V budoucnu by se chtěla zabývat sociální prací a psychoterapií, ale v srdci samozřejmě bude vždy baristkou. Když ji zrovna nepotkáte na koncertě či v kavárně, tak ve svém volnu cvičí, čte si, opečovává svého kocoura Vincenta a samozřejmě také zpívá.</p>
           </div>
@@ -442,6 +456,7 @@
             <img class="img-color" src="../images/adelagottvaldova-bar.jpg" alt="Adéla Gottvaldová" />
             <div class="member-card-name">Adéla Gottvaldová</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Áďa se hudbě taktéž věnuje od malička, ale původně začínala s hrou na klasickou kytaru. Zpěv přidala až později a nyní se mu věnuje naplno. Nyní se za kytaru jen příležitostně schovává na pódiu. Pochází z rodiny lékařů, ale rodinné řemeslo úplně nepřevzala, a tak se věnuje studiu práva v Olomouci. Když se zrovna neučí, dohání spánek a sportuje - hlavně běhá a leze po horách. Třeba se s ní jednou potkáte u rozvodového řízení v soudní síni, tak opatrně.</p>
           </div>
@@ -453,6 +468,7 @@
             <img class="img-color" src="../images/katerinacizkova-bar.jpg" alt="Kateřina Čížková" />
             <div class="member-card-name">Kateřina Čížková</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Káťu provází hudba a celkově umění od dětství – od baletu přes hru na klavír až po zpěv, který se stal nakonec její největší vášní. Studuje na vysoké škole v Praze obor bezpečnostní management a volný čas vyplňuje prací v kavárně nebo procházkami v přírodě se svým anglickým setrem Artushem. Zpívání je pro ni srdeční záležitost, ať už při sólovém vystupování nebo v rámci sexteta. Hudba pro ni zůstává tím nejkrásnějším relaxem i radostí.</p>
           </div>
@@ -464,6 +480,7 @@
             <img class="img-color" src="../images/matejdrtina-bar.jpg" alt="Matěj Drtina" />
             <div class="member-card-name">Matěj Drtina</div>
           </div>
+          <button class="member-more-btn">Více ↓</button>
           <div class="member-card-body">
             <p>Matěj je jediným zástupcem mužského hlasu a zároveň nejmladším členem našeho pěveckého seskupení. Studuje na Masarykově univerzitě v Brně obory sociologie a soudobé dějiny. Zároveň jej můžete potkat v baru Everything, kde vám jakožto zkušený barman namíchá drink dle Vašeho gusta. Ve svém volnu rád čte poezii, zajímá se o architekturu a protože je opravdu renesanční člověk, tak i sportuje - badminton a fitness centrum mu jsou nejbližší. Z celého sexteta nosí nejlepší svetry a často svými hlasovými zprávami prolamuje rádiové ticho. Matějův sametový baryton je pro Gmajor6 nepostradatelnou součástí stejně tak, jako jeho smysl pro humor a energie, která rozezní i ticho mezi tóny.</p>
           </div>
@@ -830,8 +847,11 @@
 
   // Mobile tap pro kartičky členů
   document.querySelectorAll('.member-card').forEach(function(card) {
-    card.addEventListener('click', function() {
+    card.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768 && !e.target.closest('.member-more-btn')) return;
       card.classList.toggle('is-open');
+      var btn = card.querySelector('.member-more-btn');
+      if (btn) btn.textContent = card.classList.contains('is-open') ? 'Méně ↑' : 'Více ↓';
     });
   });
 </script>
