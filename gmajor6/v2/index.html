@@ -109,14 +109,7 @@
     .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(201,168,76,.35); }
     .btn-outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
     .btn-outline:hover { background: rgba(201,168,76,.1); transform: translateY(-2px); }
-    .scroll-indicator {
-      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
-      display: flex; flex-direction: column; align-items: center; gap: .5rem;
-      color: var(--text-muted); font-size: .7rem; letter-spacing: 2px; text-transform: uppercase;
-      animation: bounce 2s ease-in-out infinite; z-index: 2;
-    }
-    .scroll-indicator::after { content: ''; display: block; width: 1px; height: 50px; background: linear-gradient(to bottom, var(--gold), transparent); }
-    @keyframes bounce { 0%,100%{ transform: translateX(-50%) translateY(0); } 50%{ transform: translateX(-50%) translateY(8px); } }
+
 
     /* SECTIONS */
     section { padding: 6rem 2rem; }
@@ -177,9 +170,14 @@
       transition: color .25s, background .25s;
     }
     .member-more-btn:hover { background: rgba(201,168,76,.07); }
-    .member-card:hover .img-color, .member-card.is-open .img-color { opacity: 1; }
-    .member-card:hover .img-bw,    .member-card.is-open .img-bw    { opacity: 0; }
-    .member-card:hover .member-card-body, .member-card.is-open .member-card-body { max-height: 400px; }
+    .member-card.is-open .img-color { opacity: 1; }
+    .member-card.is-open .img-bw    { opacity: 0; }
+    .member-card.is-open .member-card-body { max-height: 400px; }
+    @media (hover: hover) {
+      .member-card:hover .img-color { opacity: 1; }
+      .member-card:hover .img-bw    { opacity: 0; }
+      .member-card:hover .member-card-body { max-height: 400px; }
+    }
 
     /* STAFF */
     .staff-grid {
@@ -386,7 +384,6 @@
       <a href="#about" class="btn btn-outline">Více o nás</a>
     </div>
   </div>
-  <div class="scroll-indicator">scroll</div>
 </section>
 
 <!-- O NÁS -->
