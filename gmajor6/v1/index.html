@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GMajor6 – Vokální sextet z Pardubic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #c9a84c; --gold-light: #e8c97a;
+      --dark: #0d0d0d; --dark2: #141414; --dark3: #1e1e1e; --dark4: #2a2a2a;
+      --text: #e8e0d0; --text-muted: #9a9080;
+      --border-alpha: rgba(201,168,76,0.15);
+      --card-border: rgba(255,255,255,.05);
+      --card-shadow: rgba(0,0,0,.5);
+      --overlay-dark: rgba(0,0,0,.8);
+      --input-border: rgba(255,255,255,.1);
+      --nav-bg: rgba(13,13,13,0.95);
+      --hero-glow: #1a1500;
+      --hero-title-from: #fff;
+    }
+    [data-theme="light"] {
+      --gold: #a8882e; --gold-light: #c9a84c;
+      --dark: #faf8f4; --dark2: #f0ede8; --dark3: #e5e2dc; --dark4: #dad6cf;
+      --text: #1a1a1a; --text-muted: #5a5548;
+      --border-alpha: rgba(160,130,40,0.2);
+      --card-border: rgba(0,0,0,.08);
+      --card-shadow: rgba(0,0,0,.1);
+      --overlay-dark: rgba(255,255,255,.7);
+      --input-border: rgba(0,0,0,.12);
+      --nav-bg: rgba(250,248,244,0.95);
+      --hero-glow: #f5f0e0;
+      --hero-title-from: #1a1a1a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--dark); color: var(--text); overflow-x: hidden; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.2rem 3rem;
+      background: var(--nav-bg); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-alpha); transition: padding .3s, background .3s;
+    }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-decoration: none; }
+    .nav-logo span { color: var(--text); }
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-size: .85rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; transition: color .25s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold) !important; color: var(--dark) !important; padding: .5rem 1.2rem; border-radius: 4px; font-weight: 600 !important; }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); }
+    #hero {
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; position: relative; overflow: hidden;
+      background: radial-gradient(ellipse 80% 60% at 50% 40%, var(--hero-glow) 0%, var(--dark) 70%);
+    }
+    .hero-notes { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .note { position: absolute; opacity: .06; color: var(--gold); animation: floatNote linear infinite; }
+    @keyframes floatNote {
+      0%   { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+      10%  { opacity: .08; }
+      90%  { opacity: .06; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+    .hero-inner { position: relative; z-index: 2; max-width: 750px; padding: 2rem; }
+    .hero-tag { font-size: .75rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+    .hero-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 10vw, 7rem);
+      font-weight: 900; line-height: 1; margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--hero-title-from) 0%, var(--gold-light) 50%, var(--gold) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.7; font-weight: 300; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: .85rem 2.2rem; font-size: .85rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none; border-radius: 4px; transition: all .3s; cursor: pointer; border: none; font-family: inherit; }
+    .btn-primary { background: var(--gold); color: var(--dark); }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(201,168,76,.35); }
+    .btn-outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+    .btn-outline:hover { background: rgba(201,168,76,.1); transform: translateY(-2px); }
+    .scroll-indicator {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: .5rem;
+      color: var(--text-muted); font-size: .7rem; letter-spacing: 2px; text-transform: uppercase;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .scroll-indicator::after { content: ''; display: block; width: 1px; height: 50px; background: linear-gradient(to bottom, var(--gold), transparent); }
+    @keyframes bounce { 0%,100%{ transform: translateX(-50%) translateY(0); } 50%{ transform: translateX(-50%) translateY(8px); } }
+    section { padding: 6rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 4rem; }
+    .section-label { font-size: .72rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; display: block; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; }
+    .section-line { width: 60px; height: 2px; background: var(--gold); margin: 1.5rem auto 0; }
+    #about { background: var(--dark2); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-visual { display: flex; align-items: center; justify-content: center; }
+    .about-circle {
+      width: 280px; height: 280px; border-radius: 50%;
+      border: 1px solid var(--border-alpha);
+      display: flex; align-items: center; justify-content: center; position: relative;
+    }
+    .about-circle::before, .about-circle::after { content: ''; position: absolute; border-radius: 50%; border: 1px solid var(--border-alpha); }
+    .about-circle::before { width: 350px; height: 350px; }
+    .about-circle::after  { width: 420px; height: 420px; }
+    .about-icon { font-size: 5rem; }
+    .about-text h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--gold-light); }
+    .about-text p { color: var(--text-muted); line-height: 1.8; margin-bottom: 1rem; }
+    .members-grid { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+    .member-tag { background: rgba(201,168,76,.1); border: 1px solid var(--border-alpha); color: var(--gold-light); padding: .4rem 1rem; border-radius: 20px; font-size: .8rem; font-weight: 500; }
+    #concerts { background: var(--dark); }
+    .concerts-grid { display: grid; gap: 1.2rem; }
+    .concert-card {
+      background: var(--dark3); border: 1px solid var(--border-alpha);
+      border-radius: 8px; padding: 1.8rem 2rem;
+      display: grid; grid-template-columns: 100px 1fr auto; gap: 2rem; align-items: center;
+      transition: border-color .3s, transform .3s;
+    }
+    .concert-card:hover { border-color: var(--gold); transform: translateX(4px); }
+    .concert-date { text-align: center; border-right: 1px solid var(--border-alpha); padding-right: 2rem; }
+    .concert-date .day { font-size: 2.5rem; font-weight: 700; color: var(--gold); line-height: 1; }
+    .concert-date .month { font-size: .8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
+    .concert-date .year { font-size: .75rem; color: var(--text-muted); margin-top: .2rem; }
+    .concert-info h3 { font-size: 1.2rem; margin-bottom: .4rem; font-family: 'Playfair Display', serif; }
+    .concert-info .venue { color: var(--text-muted); font-size: .9rem; }
+    .concert-info .venue span { color: var(--gold-light); }
+    .concert-badge { background: rgba(201,168,76,.15); border: 1px solid var(--gold); color: var(--gold); padding: .4rem 1rem; border-radius: 4px; font-size: .75rem; font-weight: 600; letter-spacing: 1px; white-space: nowrap; }
+    .concert-badge.sold { background: rgba(255,80,80,.1); border-color: #ff5050; color: #ff5050; }
+    #past { background: var(--dark2); }
+    .past-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .past-card { background: var(--dark3); border-radius: 8px; overflow: hidden; border: 1px solid var(--card-border); transition: transform .3s, box-shadow .3s; }
+    .past-card:hover { transform: translateY(-4px); box-shadow: 0 15px 40px var(--card-shadow); }
+    .past-card-header { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3rem; position: relative; overflow: hidden; }
+    .past-card-header::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(201,168,76,.2), var(--overlay-dark)); }
+    .past-card-body { padding: 1.5rem; }
+    .past-card-body h3 { font-size: 1.1rem; margin-bottom: .5rem; font-family: 'Playfair Display', serif; }
+    .past-card-body .past-meta { display: flex; gap: 1rem; color: var(--text-muted); font-size: .82rem; margin-bottom: .8rem; flex-wrap: wrap; }
+    .past-card-body p { color: var(--text-muted); font-size: .88rem; line-height: 1.6; }
+    #social { background: var(--dark); }
+    .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; max-width: 700px; margin: 0 auto; }
+    .social-card { background: var(--dark3); border-radius: 12px; padding: 2.5rem 1.5rem; text-align: center; text-decoration: none; border: 1px solid var(--card-border); transition: all .3s; }
+    .social-card:hover { border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 15px 35px rgba(201,168,76,.15); }
+    .social-icon { font-size: 2.5rem; margin-bottom: 1rem; display: block; }
+    .social-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: .3rem; color: var(--text); }
+    .social-card p { font-size: .8rem; color: var(--text-muted); }
+    .social-handle { color: var(--gold); font-size: .85rem; font-weight: 500; margin-top: .5rem; display: block; }
+    #contact { background: var(--dark2); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .contact-info h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1.5rem; }
+    .contact-info p { color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; }
+    .contact-items { display: flex; flex-direction: column; gap: 1.2rem; }
+    .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .contact-item-icon { width: 42px; height: 42px; background: rgba(201,168,76,.1); border: 1px solid var(--border-alpha); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .contact-item-text .label { font-size: .72rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: .2rem; }
+    .contact-item-text .value { font-size: .95rem; color: var(--text); }
+    .contact-item-text a { color: var(--gold-light); text-decoration: none; }
+    .contact-item-text a:hover { color: var(--gold); }
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: .4rem; }
+    .form-group label { font-size: .75rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); }
+    .form-group input, .form-group textarea, .form-group select {
+      background: var(--dark4); border: 1px solid var(--input-border);
+      color: var(--text); padding: .85rem 1rem; border-radius: 6px;
+      font-size: .9rem; font-family: inherit; transition: border-color .3s;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--gold); }
+    .form-group select option { background: var(--dark4); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    footer { background: var(--dark); border-top: 1px solid var(--border-alpha); padding: 3rem 2rem 2rem; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; color: var(--gold); margin-bottom: 1rem; }
+    footer p { color: var(--text-muted); font-size: .85rem; line-height: 1.8; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
+    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: .82rem; transition: color .25s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--card-border); color: var(--text-muted); font-size: .78rem; }
+    /* Light mode overrides for inline styles */
+    [data-theme="light"] .past-card-header { background: linear-gradient(135deg, var(--dark3), var(--dark4)) !important; }
+    [data-theme="light"] .past-card-header::before { background: linear-gradient(135deg, rgba(201,168,76,.08), rgba(240,237,232,.3)); }
+    [data-theme="light"] .concert-badge { background: rgba(168,136,46,.1); }
+    [data-theme="light"] .concert-badge.sold { background: rgba(255,80,80,.08); }
+    [data-theme="light"] .social-card:hover { box-shadow: 0 15px 35px rgba(168,136,46,.1); }
+    [data-theme="light"] .btn-primary:hover { box-shadow: 0 8px 25px rgba(168,136,46,.25); }
+    /* Theme toggle */
+    .theme-toggle {
+      width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border-alpha);
+      background: var(--dark3); color: var(--gold); font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all .3s; flex-shrink: 0;
+    }
+    .theme-toggle:hover { background: var(--gold); color: var(--dark); border-color: var(--gold); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
+    /* Smooth transitions for theme switch */
+    body, nav, section, footer, .concert-card, .past-card, .social-card, .contact-item-icon,
+    .form-group input, .form-group textarea, .form-group select, .member-tag, .about-circle,
+    .hero-title, .btn-outline { transition: background .4s, color .4s, border-color .4s; }
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { display: none; flex-direction: column; position: fixed; top: 0; right: 0; bottom: 0; width: 70%; background: var(--dark2); padding: 5rem 2rem 2rem; gap: 1.5rem; z-index: 99; transform: translateX(100%); transition: transform .3s, background .4s; }
+      .nav-links.open { display: flex; transform: translateX(0); }
+      .hamburger { display: flex; z-index: 101; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-visual { display: none; }
+      .concert-card { grid-template-columns: 80px 1fr; }
+      .concert-badge { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+      section { padding: 4rem 1.2rem; }
+      .social-grid { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">G<span>Major</span>6</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">O nás</a></li>
+    <li><a href="#concerts">Koncerty</a></li>
+    <li><a href="#past">Galerie akcí</a></li>
+    <li><a href="#social">Sítě</a></li>
+    <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Přepnout světlý/tmavý režim">🌙</button>
+    <div class="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<section id="hero">
+  <div class="hero-notes" id="notesContainer"></div>
+  <div class="hero-inner">
+    <p class="hero-tag">♩ Vokální sextet · Pardubice · od roku 2022 ♩</p>
+    <h1 class="hero-title">GMajor6</h1>
+    <p class="hero-sub">Jsme pěvecké šestičlenné uskupení, které působí na pardubické hudební scéně již od roku 2022.<br>Při našich koncertech si zakládáme na příjemné atmosféře, kterou vytváříme tím, že jsme především přátelé a až na druhém místě kolegové.</p>
+    <div class="hero-btns">
+      <a href="#concerts" class="btn btn-primary">Nadcházející koncerty</a>
+      <a href="#about" class="btn btn-outline">Více o nás</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">scroll</div>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-circle"><span class="about-icon">🎵</span></div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Kdo jsme</span>
+        <h3>Jsme parta z Pardubic, která se rozhodla to, co miluje posunout o kousek dál.</h3>
+        <p>Jsme pěvecké sexteto, které spojila hlavně radost z hudby a chuť zpívat. Dali jsme se dohromady pod střechou ZUŠ Pardubice Havlíčkova 925, kde spolupracujeme pod uměleckým vedením Mgr. Zdeňky Grossové.</p>
+        <p>Můžeme nabídnout široký koncertní repertoár plný jak českých, tak i zahraničních písní všech žánrů. Vystupujeme především za klavírního doprovodu, ale u větších projektů rádi hudební doprovod rozšiřujeme i o jiné nástroje. Baví nás tvořit hudební projekty, které Vám dále rádi předáváme.</p>
+        <div class="members-grid">
+          <span class="member-tag">🎤 Adéla Šrámková</span>
+          <span class="member-tag">🎤 Alice Vacková</span>
+          <span class="member-tag">🎤 Berta E. Hochmanová</span>
+          <span class="member-tag">🎤 Adéla Gottvaldová</span>
+          <span class="member-tag">🎤 Kateřina Čížková</span>
+          <span class="member-tag">🎤 Matěj Drtina</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="concerts">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Kalendář</span>
+      <h2 class="section-title">Nadcházející koncerty</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="concerts-grid">
+      <div class="concert-card">
+        <div class="concert-date"><div class="day">06</div><div class="month">Bře</div><div class="year">2026</div></div>
+        <div class="concert-info">
+          <h3>Koncert Alice Vackové a Adély Gottvaldové</h3>
+          <div class="venue">📍 <span>Bar Everything, Palác Hybských, Pardubice</span> · 20:00 – 22:00</div>
+          <div class="venue" style="margin-top:.3rem">🎟 Vstupné dobrovolné · Open door od 19:00</div>
+        </div>
+        <div class="concert-badge">Volný vstup</div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--text-muted);margin-top:2rem;font-size:.9rem">Další akce průběžně přidáváme — sledujte nás na sociálních sítích.</p>
+  </div>
+</section>
+<section id="past">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Vzpomínky</span>
+      <h2 class="section-title">Uplynulé akce</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="past-grid">
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#1a0a00,#0d0d0d)">🏙️</div>
+        <div class="past-card-body"><h3>Slavnostní předávání cen města Pardubic</h3><div class="past-meta"><span>📅 13. 5. 2025</span><span>📍 Pardubice</span></div><p>Měli jsme tu možnost v úterý 13. května 2025 hudebně doprovodit předávání cen města Pardubice.</p></div>
+      </div>
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#0d1500,#0d0d0d)">☕</div>
+        <div class="past-card-body"><h3>Koncert v Kitchenery</h3><div class="past-meta"><span>📅 léto 2025</span><span>📍 Pardubice</span></div><p>V létě jsme vystupovali i v Kitchenery, bistru v pasáži sv. Jana se streetfoodovým šmrncem, vlastní pekárnou a výběrovkou.</p></div>
+      </div>
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#15001a,#0d0d0d)">🎸</div>
+        <div class="past-card-body"><h3>Koncert v R klubu Chrudim</h3><div class="past-meta"><span>📅 12. 4. 2025</span><span>📍 Chrudim</span></div><p>V sobotu 12. dubna 2025 jsme byli jako hudební výpomoc pozváni na koncert kapely KYX Orchestra, který se konal v R klubu v Chrudimi. Těšíme se na příště!</p></div>
+      </div>
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#001a15,#0d0d0d)">🎓</div>
+        <div class="past-card-body"><h3>ZUŠ Open</h3><div class="past-meta"><span>📅 30. 5. 2024</span><span>📍 Dům hudby, Pardubice</span></div><p>Ve čtvrtek 30. května 2024 jsme vystupovali v Domě Hudby na slavnostním koncertě ZUŠ Havlíčkova, který byl pořádán v rámci ZUŠ Open.</p></div>
+      </div>
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#1a1000,#0d0d0d)">🎼</div>
+        <div class="past-card-body"><h3>Absolventský koncert ZUŠ Havlíčkova</h3><div class="past-meta"><span>📅 12. 6. 2023</span><span>📍 Magistrát města, Pardubice</span></div><p>Naším prvním velkým koncertem byl absolventský koncert členů sexteta, který jsme pořádali 12. června 2023 v historickém sále magistrátu města Pardubic.</p></div>
+      </div>
+      <div class="past-card">
+        <div class="past-card-header" style="background:linear-gradient(135deg,#0d0a1a,#0d0d0d)">🍸</div>
+        <div class="past-card-body"><h3>Koncertování v baru Everything</h3><div class="past-meta"><span>📅 opakovaně</span><span>📍 Pardubice</span></div><p>Nejčastěji vystupujeme v našem oblíbeném podniku v Pardubicích v baru Everything. Rádi zde vymýšlíme jak velké koncerty, tak pohodové letní hudební posezení na terásce.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="social">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Sledujte nás</span>
+      <h2 class="section-title">Sociální sítě</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="social-grid">
+      <a href="https://instagram.com/_gmajor6_" target="_blank" rel="noopener" class="social-card">
+        <span class="social-icon">📸</span>
+        <h3>Instagram</h3>
+        <p>Fotky, reels a zákulisí ze zkoušek i koncertů</p>
+        <span class="social-handle">@_gmajor6_</span>
+      </a>
+      <a href="https://facebook.com/Gmajor6" target="_blank" rel="noopener" class="social-card">
+        <span class="social-icon">👥</span>
+        <h3>Facebook</h3>
+        <p>Novinky, události a naše komunita</p>
+        <span class="social-handle">Gmajor6</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Napište nám</span>
+      <h2 class="section-title">Kontakt</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Jak se s námi můžete spojit</h3>
+        <p>Vystupujeme především v našem rodném městě v Pardubicích a v blízkém okolí. Není pro nás ale problém za vámi dojet i do vzdálenějších koutů republiky. Spolupráce zakládáme především na vzájemné domluvě a komunikaci. Jsme otevření všemu a všem.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-text"><div class="label">E-mail</div><div class="value"><a href="mailto:ikonickesexteto@gmail.com">ikonickesexteto@gmail.com</a></div></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📸</div>
+            <div class="contact-item-text"><div class="label">Instagram</div><div class="value"><a href="https://instagram.com/_gmajor6_" target="_blank" rel="noopener">@_gmajor6_</a></div></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text"><div class="label">Základna</div><div class="value">ZUŠ Pardubice, Havlíčkova 925</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🗓️</div>
+            <div class="contact-item-text"><div class="label">Dostupnost</div><div class="value">Celoročně, po celé ČR</div></div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group"><label>Jméno</label><input type="text" placeholder="Vaše jméno" /></div>
+          <div class="form-group"><label>E-mail</label><input type="email" placeholder="vas@email.cz" /></div>
+        </div>
+        <div class="form-group">
+          <label>Typ akce</label>
+          <select>
+            <option value="">Vyberte typ akce...</option>
+            <option>Svatba / Obřad</option>
+            <option>Koncert</option>
+            <option>Společenská akce / Ples</option>
+            <option>Firemní event</option>
+            <option>Vánoční akce</option>
+            <option>Jiné</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Zpráva</label><textarea placeholder="Řekněte nám více o akci – datum, místo, počet hostů..."></textarea></div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Odeslat poptávku →</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-logo">GMajor6</div>
+  <p>Vokální sextet · Pardubice, Česká republika · od roku 2022</p>
+  <div class="footer-links">
+    <a href="#about">O nás</a>
+    <a href="#concerts">Koncerty</a>
+    <a href="#past">Galerie akcí</a>
+    <a href="#social">Sociální sítě</a>
+    <a href="#contact">Kontakt</a>
+  </div>
+  <div class="footer-copy">© 2026 GMajor6. Všechna práva vyhrazena.</div>
+</footer>
+<script>
+  const notes = ['♩','♪','♫','♬','𝄞','𝄢'];
+  const c = document.getElementById('notesContainer');
+  for (let i = 0; i < 18; i++) {
+    const n = document.createElement('div');
+    n.className = 'note';
+    n.textContent = notes[Math.floor(Math.random() * notes.length)];
+    n.style.cssText = `left:${Math.random()*100}%;animation-duration:${12+Math.random()*20}s;animation-delay:${Math.random()*20}s;font-size:${1.2+Math.random()*2.5}rem`;
+    c.appendChild(n);
+  }
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').style.padding = window.scrollY > 50 ? '.8rem 3rem' : '1.2rem 3rem';
+  });
+  function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = '✓ Odesláno! Brzy se ozveme.';
+    btn.style.background = '#2a7a2a'; btn.disabled = true;
+    setTimeout(() => { btn.textContent = 'Odeslat poptávku →'; btn.style.background = ''; btn.disabled = false; }, 5000);
+  }
+  // Theme toggle
+  (function() {
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function setTheme(theme) {
+      if (theme === 'light') {
+        root.setAttribute('data-theme', 'light');
+        toggle.textContent = '☀️';
+      } else {
+        root.removeAttribute('data-theme');
+        toggle.textContent = '🌙';
+      }
+      localStorage.setItem('gmajor6-theme', theme);
+    }
+    // Load saved preference
+    const saved = localStorage.getItem('gmajor6-theme');
+    if (saved) setTheme(saved);
+    toggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      setTheme(current === 'light' ? 'dark' : 'light');
+    });
+  })();
+</script>
+</body>
+</html>
