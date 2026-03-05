@@ -76,7 +76,7 @@
     }
     .hero-bg {
       position: absolute; inset: 0; z-index: 0;
-      background: url('../images/sexteto-background.jpg') center/cover no-repeat;
+      background: url('../images/sexteto-uvodni.jpg') center/cover no-repeat;
     }
     .hero-bg::after {
       content: ''; position: absolute; inset: 0;
@@ -187,7 +187,14 @@
     .service-card-body p { color: var(--text-muted); font-size: .85rem; line-height: 1.7; }
 
     /* CONCERTS */
-    #concerts { background: var(--dark2); }
+    #concerts { background: var(--dark2); position: relative; overflow: hidden; }
+    .concert-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: url('../images/sexteto-background.jpg') center/cover no-repeat fixed;
+      opacity: .08;
+    }
+    [data-theme="light"] .concert-bg { opacity: .06; }
+    #concerts .container { position: relative; z-index: 1; }
     .concert-feature {
       display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;
       background: var(--dark3); border: 1px solid var(--border-alpha); border-radius: 12px;
@@ -533,6 +540,7 @@
 
 <!-- NADCHÁZEJÍCÍ KONCERTY -->
 <section id="concerts">
+  <div class="concert-bg"></div>
   <div class="container">
     <div class="section-header">
       <span class="section-label">Kalendář</span>
