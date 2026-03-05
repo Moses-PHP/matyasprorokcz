@@ -16,7 +16,7 @@
       --card-shadow: rgba(0,0,0,.5);
       --overlay-dark: rgba(0,0,0,.8);
       --input-border: rgba(255,255,255,.1);
-      --nav-bg: rgba(13,13,13,0.95);
+      --nav-bg: rgba(13,13,13,0.95); --nav-bg-solid: #0d0d0d;
       --hero-glow: #1a1500;
       --hero-title-from: #fff;
       --logo-invert: invert(1);
@@ -30,7 +30,7 @@
       --card-shadow: rgba(0,0,0,.1);
       --overlay-dark: rgba(255,255,255,.7);
       --input-border: rgba(0,0,0,.12);
-      --nav-bg: rgba(250,248,244,0.95);
+      --nav-bg: rgba(250,248,244,0.95); --nav-bg-solid: #faf8f4;
       --hero-glow: #f5f0e0;
       --hero-title-from: #ffffff;
       --logo-invert: invert(0);
@@ -323,12 +323,12 @@
       .gallery-grid { grid-template-columns: repeat(3, 1fr); grid-auto-rows: 180px; }
     }
     @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
+      nav { padding: 1rem 1.5rem; backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--nav-bg-solid); }
       .nav-links {
         display: flex; flex-direction: column; position: fixed; top: 0; right: 0; bottom: 0;
-        width: 75%; background: var(--dark3); padding: 5rem 0 2rem; gap: 0; z-index: 99;
+        width: 75%; background: var(--dark3); background-color: var(--dark3); padding: 5rem 0 2rem; gap: 0; z-index: 99;
         transform: translateX(100%); visibility: hidden; opacity: 0;
-        transition: transform .3s, background .4s, opacity .3s, visibility .3s;
+        transition: transform .3s, opacity .3s, visibility .3s;
         border-left: 1px solid var(--border-alpha);
         box-shadow: -12px 0 35px rgba(0,0,0,.6);
       }
@@ -554,7 +554,7 @@
       </div>
 
       <div class="service-card">
-        <img class="service-card-img" src="../images/fcbb8ecd40006ed80cc2ae01df287293.jpg" alt="Vánoční akce" />
+        <img class="service-card-img" src="../images/ef692b828ba7a6a046f1def1f4f189fe.jpg" alt="Vánoční akce" />
         <div class="service-card-body">
           <h3>Vánoční akce</h3>
           <p class="service-tagline">Kouzelná vánoční atmosféra s repertoárem plným známých adventních písní a zimních melodií.</p>
@@ -664,7 +664,7 @@
     </div>
 
     <!-- FOTOGALERIE EVERYTHING -->
-    <div class="gallery-section">
+    <div class="gallery-section" style="display:none">
       <h3>Naše koncertování v Everything</h3>
       <p class="gallery-sub">V baru Everything je nám jako doma — tady je pár momentek z našich vystoupení.</p>
       <div class="gallery-grid">
