@@ -1,0 +1,163 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #f0ede8;
+  --accent: #c8a96e;
+  --muted: #3a3a3a;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Georgia', serif;
+  cursor: none;
+  overflow: hidden;
+}
+
+/* Noise overlay */
+.noise {
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Cursor glow */
+.cursor-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 169, 110, 0.12) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* Custom cursor dot */
+body::after {
+  content: '';
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 200;
+  transition: transform 0.1s ease;
+  top: var(--cy, -20px);
+  left: var(--cx, -20px);
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  user-select: none;
+}
+
+.label {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  min-height: 1.1em;
+  transition: opacity 0.4s ease;
+}
+
+.label.visible {
+  opacity: 1;
+}
+
+.name {
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  mix-blend-mode: normal;
+  position: relative;
+}
+
+.name::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Subtle char hover effect handled in JS */
+.name .char {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
+  cursor: none;
+}
+
+.name .char:hover {
+  color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  margin: 2.5rem auto;
+  transform-origin: top;
+  animation: lineGrow 1.2s cubic-bezier(0.76, 0, 0.24, 1) 0.4s both;
+}
+
+@keyframes lineGrow {
+  from { transform: scaleY(0); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+
+.url {
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  color: var(--muted);
+  text-transform: lowercase;
+  animation: fadeUp 1s ease 0.8s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Name entry animation */
+.name {
+  animation: fadeUp 1s ease 0.1s both;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .cursor-glow { display: none; }
+  body { cursor: auto; }
+  body::after { display: none; }
+  .name .char:hover {
+    transform: none;
+    color: inherit;
+  }
+}
