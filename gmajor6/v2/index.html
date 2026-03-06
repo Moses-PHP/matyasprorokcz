@@ -133,8 +133,8 @@
     .members-grid {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
     }
-    .member-card { background: var(--dark3); border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); transition: transform .3s, box-shadow .3s; cursor: pointer; }
-    .member-card:hover { box-shadow: 0 15px 40px var(--card-shadow); }
+    .member-card { background: var(--dark3); border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border); transition: border-color .3s, box-shadow .3s; cursor: pointer; }
+    .member-card:hover { border-color: var(--gold); box-shadow: 0 8px 28px rgba(201,168,76,.15); }
     .member-card-img-wrap { position: relative; height: 280px; overflow: hidden; }
     .member-card-img-wrap .img-bw,
     .member-card-img-wrap .img-color {
@@ -874,66 +874,70 @@
     });
   })();
 
-  // Member cards — expand below the row (dynamic row detection, works on any screen size)
+  // Member cards — single reusable panel, inserted/removed from DOM dynamically
   (function() {
     var cards = Array.from(document.querySelectorAll('.member-card'));
-    var grid  = document.querySelector('.members-grid');
+    var grid = document.querySelector('.members-grid');
     if (!grid || !cards.length) return;
 
-    // Insert one panel after every card — only the right one gets opened
-    var panels = cards.map(function(card) {
-      var panel = document.createElement('div');
-      panel.className = 'member-expand-panel';
-      panel.innerHTML = '<div class="member-expand-panel-inner"></div>';
-      card.after(panel);
-      return panel;
-    });
-
+    var panel = document.createElement('div');
+    panel.className = 'member-expand-panel';
+    panel.innerHTML = '<div class="member-expand-panel-inner"></div>';
     var activeCard = null;
 
-    function closeAll() {
-      panels.forEach(function(p) {
-        p.classList.remove('is-open');
-        p.querySelector('.member-expand-panel-inner').innerHTML = '';
-      });
-      cards.forEach(function(c) {
-        c.classList.remove('is-open');
-        var btn = c.querySelector('.member-more-btn');
-        if (btn) btn.textContent = 'Více ↓';
-      });
-      activeCard = null;
-    }
-
-    // Find the panel after the last card in the same visual row as `card`
-    function getRowPanel(card) {
+    function getLastInRow(card) {
       var top = card.getBoundingClientRect().top;
       var rowCards = cards.filter(function(c) {
         return Math.abs(c.getBoundingClientRect().top - top) < 5;
       });
-      var lastIdx = cards.indexOf(rowCards[rowCards.length - 1]);
-      return panels[lastIdx];
+      return rowCards[rowCards.length - 1];
+    }
+
+    function resetCards() {
+      cards.forEach(function(c) {
+        c.classList.remove('is-open');
+        var b = c.querySelector('.member-more-btn');
+        if (b) b.textContent = 'Více ↓';
+      });
+    }
+
+    function openCard(card) {
+      var btn = card.querySelector('.member-more-btn');
+      resetCards();
+      panel.classList.remove('is-open');
+      if (panel.parentNode) panel.parentNode.removeChild(panel);
+
+      activeCard = card;
+      card.classList.add('is-open');
+      if (btn) btn.textContent = 'Méně ↑';
+
+      var name = card.querySelector('.member-card-name').textContent.trim();
+      var bio = card.querySelector('.member-card-body').innerHTML;
+      panel.querySelector('.member-expand-panel-inner').innerHTML =
+        '<div class="member-expand-panel-name">' + name + '</div>' + bio;
+
+      var lastInRow = getLastInRow(card);
+      lastInRow.after(panel);
+      panel.offsetHeight;
+      panel.classList.add('is-open');
+    }
+
+    function closeCard() {
+      resetCards();
+      panel.classList.remove('is-open');
+      activeCard = null;
+      setTimeout(function() {
+        if (!activeCard && panel.parentNode) {
+          panel.parentNode.removeChild(panel);
+        }
+      }, 500);
     }
 
     cards.forEach(function(card) {
-      var btn = card.querySelector('.member-more-btn');
-
       card.addEventListener('click', function(e) {
         if (window.innerWidth <= 768 && !e.target.closest('.member-more-btn')) return;
-
-        if (activeCard === card) { closeAll(); return; }
-
-        closeAll();
-
-        card.classList.add('is-open');
-        if (btn) btn.textContent = 'Méně ↑';
-        activeCard = card;
-
-        var name = card.querySelector('.member-card-name').textContent.trim();
-        var bio  = card.querySelector('.member-card-body').innerHTML;
-        var targetPanel = getRowPanel(card);
-        targetPanel.querySelector('.member-expand-panel-inner').innerHTML =
-          '<div class="member-expand-panel-name">' + name + '</div>' + bio;
-        targetPanel.classList.add('is-open');
+        if (activeCard === card) { closeCard(); }
+        else { openCard(card); }
       });
     });
   })();
