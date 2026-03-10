@@ -20,12 +20,26 @@
     </div>
   </main>
 
-  <div class="ticker-bar" id="ticker-bar">
-    <span class="ticker-label">POLITIKA &amp; OBRANA</span>
-    <div class="ticker-track">
-      <span class="ticker-content" id="ticker-content"></span>
+  <!-- Trigger tlačítko -->
+  <button class="news-trigger" id="news-trigger" aria-label="Otevřít zprávy">
+    <span class="news-trigger-label">ZPRÁVY</span>
+    <span class="news-trigger-key">N</span>
+  </button>
+
+  <!-- Boční panel zpráv -->
+  <aside class="news-panel" id="news-panel" aria-hidden="true">
+    <div class="news-panel-header">
+      <span class="news-panel-title">POLITIKA &amp; OBRANA</span>
+      <button class="news-panel-close" id="news-panel-close" aria-label="Zavřít">×</button>
     </div>
-  </div>
+    <div class="news-panel-source">iDnes.cz</div>
+    <ul class="news-list" id="news-list">
+      <li class="news-loading">Načítám zprávy…</li>
+    </ul>
+  </aside>
+
+  <!-- Overlay pro zavření kliknutím mimo panel -->
+  <div class="news-overlay" id="news-overlay"></div>
 
   <script src="script.js"></script>
 </body>
