@@ -92,32 +92,59 @@ window.addEventListener('scroll', () => {
   nameEl.style.transform = `translateY(${y * 0.3}px)`;
 });
 
-// iDnes news ticker
-async function loadTicker() {
+// Boční panel zpráv
+const panel   = document.getElementById('news-panel');
+const overlay = document.getElementById('news-overlay');
+const trigger = document.getElementById('news-trigger');
+const closeBtn = document.getElementById('news-panel-close');
+const newsList = document.getElementById('news-list');
+
+let newsLoaded = false;
+
+function openPanel() {
+  panel.classList.add('open');
+  panel.setAttribute('aria-hidden', 'false');
+  overlay.classList.add('active');
+  if (!newsLoaded) loadNews();
+}
+
+function closePanel() {
+  panel.classList.remove('open');
+  panel.setAttribute('aria-hidden', 'true');
+  overlay.classList.remove('active');
+}
+
+trigger.addEventListener('click', openPanel);
+closeBtn.addEventListener('click', closePanel);
+overlay.addEventListener('click', closePanel);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'n' || e.key === 'N') {
+    if (!panel.classList.contains('open')) openPanel();
+  }
+  if (e.key === 'Escape') closePanel();
+});
+
+async function loadNews() {
   try {
     const res = await fetch('news.php');
-    if (!res.ok) return;
+    if (!res.ok) throw new Error();
     const data = await res.json();
-    if (!data.items || !data.items.length) return;
 
-    const content = document.getElementById('ticker-content');
-    const bar     = document.getElementById('ticker-bar');
+    if (!data.items || !data.items.length) {
+      newsList.innerHTML = '<li class="news-loading">Žádné zprávy nenalezeny.</li>';
+      return;
+    }
 
-    content.innerHTML = data.items
-      .map(item => `<a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a>`)
-      .join('&ensp;·&ensp;') + '&ensp;·&ensp;';
+    newsList.innerHTML = data.items
+      .map(item => `<li><a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a></li>`)
+      .join('');
 
-    // Délka animace podle počtu znaků — přibližně 80px/s
-    const charCount = data.items.reduce((sum, i) => sum + i.title.length, 0);
-    const duration  = Math.max(25, charCount * 0.09);
-    content.style.animationDuration = duration + 's';
-
-    bar.classList.add('loaded');
+    newsLoaded = true;
   } catch (e) {
-    // Ticker zůstane skrytý při chybě
+    newsList.innerHTML = '<li class="news-loading">Nepodařilo se načíst zprávy.</li>';
   }
 }
-loadTicker();
 
 // Easter egg: Konami code
 const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
