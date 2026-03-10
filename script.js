@@ -127,7 +127,7 @@ document.addEventListener('keydown', e => {
 
 async function loadNews() {
   try {
-    const res = await fetch('news.php');
+    const res = await fetch('news.json');
     if (!res.ok) throw new Error();
     const data = await res.json();
 

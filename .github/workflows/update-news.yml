@@ -1,0 +1,80 @@
+name: Update News
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch and filter iDnes news
+        shell: python3 {0}
+        run: |
+          import urllib.request
+          import xml.etree.ElementTree as ET
+          import json
+
+          keywords = [
+              'vláda', 'ministr', 'parlament', 'poslanec', 'senát', 'volby',
+              'strana', 'koalice', 'opozice', 'prezident', 'premiér', 'sněmovna',
+              'politika', 'politik', 'zákon', 'hlasování', 'fiala', 'pavel',
+              'referendum', 'kandidát', 'volební',
+              'válka', 'armáda', 'obrana', 'vojenský', 'nato', 'zbraně', 'útok',
+              'konflikt', 'rusko', 'ukrajina', 'gaza', 'izrael', 'čína', 'vojáci',
+              'drony', 'rakety', 'bezpečnost', 'bombardování', 'ofenzíva', 'obranný',
+              'pentagon', 'generál', 'mise', 'putin', 'zelenskyj', 'trump',
+              'sankce', 'diplomacie', 'zbrojní', 'munice', 'tanky', 'letectvo',
+          ]
+
+          rss_urls = [
+              'https://servis.idnes.cz/rss.aspx?c=zpravy',
+              'https://servis.idnes.cz/rss.aspx?c=zpravy-zahranicni',
+          ]
+
+          items = []
+          seen = set()
+
+          for url in rss_urls:
+              try:
+                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                  with urllib.request.urlopen(req, timeout=8) as r:
+                      tree = ET.parse(r)
+                  channel = tree.getroot().find('channel')
+                  if channel is None:
+                      continue
+                  for item in channel.findall('item'):
+                      title = (item.findtext('title') or '').strip()
+                      link  = (item.findtext('link')  or '').strip()
+                      desc  = (item.findtext('description') or '').strip()
+                      if not link or link in seen:
+                          continue
+                      text = (title + ' ' + desc).lower()
+                      for kw in keywords:
+                          if kw in text:
+                              items.append({'title': title, 'link': link})
+                              seen.add(link)
+                              break
+                      if len(items) >= 25:
+                          break
+              except Exception as e:
+                  print(f'Error fetching {url}: {e}')
+
+          with open('news.json', 'w', encoding='utf-8') as f:
+              json.dump({'items': items}, f, ensure_ascii=False, indent=2)
+          print(f'Saved {len(items)} items to news.json')
+
+      - name: Commit news.json
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add news.json
+          git diff --staged --quiet || (git commit -m "Update news.json" && git push)
