@@ -2,6 +2,8 @@
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: public, max-age=300');
 
+set_time_limit(20);
+
 $cache_file = sys_get_temp_dir() . '/idnes_news_filtered.json';
 $cache_ttl  = 300; // 5 minut
 
@@ -32,6 +34,14 @@ $rss_urls = [
     'https://servis.idnes.cz/rss.aspx?c=zpravy-zahranicni',
 ];
 
+$context = stream_context_create([
+    'http' => [
+        'timeout'    => 8,
+        'user_agent' => 'Mozilla/5.0',
+    ],
+]);
+libxml_set_streams_context($context);
+
 $items = [];
 $seen  = [];
 
@@ -61,5 +71,5 @@ foreach ($rss_urls as $url) {
 }
 
 $result = json_encode(['items' => $items], JSON_UNESCAPED_UNICODE);
-file_put_contents($cache_file, $result);
+@file_put_contents($cache_file, $result);
 echo $result;
