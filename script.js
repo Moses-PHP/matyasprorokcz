@@ -92,6 +92,33 @@ window.addEventListener('scroll', () => {
   nameEl.style.transform = `translateY(${y * 0.3}px)`;
 });
 
+// iDnes news ticker
+async function loadTicker() {
+  try {
+    const res = await fetch('news.php');
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data.items || !data.items.length) return;
+
+    const content = document.getElementById('ticker-content');
+    const bar     = document.getElementById('ticker-bar');
+
+    content.innerHTML = data.items
+      .map(item => `<a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a>`)
+      .join('&ensp;·&ensp;') + '&ensp;·&ensp;';
+
+    // Délka animace podle počtu znaků — přibližně 80px/s
+    const charCount = data.items.reduce((sum, i) => sum + i.title.length, 0);
+    const duration  = Math.max(25, charCount * 0.09);
+    content.style.animationDuration = duration + 's';
+
+    bar.classList.add('loaded');
+  } catch (e) {
+    // Ticker zůstane skrytý při chybě
+  }
+}
+loadTicker();
+
 // Easter egg: Konami code
 const konami = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
 let ki = 0;
