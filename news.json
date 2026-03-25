@@ -1,8 +1,28 @@
 {
   "items": [
     {
-      "title": "Byl to krvavý kompromis, řekl Munzar z ODS ke zvýšení odvodů za minulé vlády",
+      "title": "Menší pojišťovny dostanou 7,9 miliard z VZP. Opozici vadí okradení pojištěnců",
+      "link": "https://www.idnes.cz/zpravy/domaci/koalice-prosadila-prerozdeleni-7-9-miliardy-z-penez-vzp-mezi-mensi-pojistovny.A260325_135319_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Poslanci snížili sociální odvody pro OSVČ. Ke koalici se přidala i ODS",
       "link": "https://www.idnes.cz/zpravy/domaci/snemovna-zastaveni-rustu-socialnich-odvodu-u-osvc.A260325_042227_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Prezident Ghany kritizuje Trumpa za přístup k černošské historii. Žádá reparace",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/ghana-prezident-mahama-reparace-osn-trump-otrokarstvi.A260325_132025_zahranicni_rtn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Žena zadržená na Slovensku kvůli útoku v Pardubicích je Američanka",
+      "link": "https://www.idnes.cz/zpravy/domaci/soud-slovensko-vazba-pardubice.A260325_095217_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Největší útok v posledním roce. V Rusku hoří přístav, statisíce lidí jsou bez proudu",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-dron-utok-belgorod-vypadek-elektrina.A260325_094122_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Prezidentova řidiče potrestali za nehodu. V pohotovosti nesmí pít alkohol, řekl soud",
+      "link": "https://www.idnes.cz/hradec-kralove/zpravy/soud-ridic-prezident-petr-pavel-nehoda-alkohol-cermna-nachod.A260325_075057_hradec-zpravy_tuu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Muž přechovával lysohlávky i zbraně bez povolení, pro pěstírnu konopí kradl proud",
@@ -33,44 +53,8 @@
       "link": "https://www.idnes.cz/ostrava/zpravy/karvina-fotbalova-afera-radni-rada-primator-wolf.A260325_101649_ostrava-zpravy_jog#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Žena zadržená na Slovensku kvůli útoku v Pardubicích je Američanka",
-      "link": "https://www.idnes.cz/zpravy/domaci/soud-slovensko-vazba-pardubice.A260325_095217_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
       "title": "Psal pro feministický magazín, odsuzoval Izrael. Kdo je obviněný ze žhářského útoku",
       "link": "https://www.idnes.cz/zpravy/domaci/pardubice-hala-zhari-profil-obvinenych.A260325_101459_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Co Jackson nenatočil. Chystá se další film podle části knihy Společenstvo prstenu",
-      "link": "https://www.idnes.cz/kultura/film-televize/pan-prstenu-peter-jackson-stephen-colbert-andy-serkis-stredozeme.A260325_092025_filmvideo_jgo#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Lodě, které nepatří nepřátelům, mohou Hormuzem proplout, nabízí Írán",
-      "link": "https://www.idnes.cz/ekonomika/zahranicni/iran-hormuzsky-pruliv-krize-na-blizkem-vychode.A260325_100308_eko-zahranicni_hyk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Estonskou elektrárnu zasáhl ruský dron. Mimořádně zasedne vláda",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-estonsko-lotyssko-elektrarna-dron-valka-ukrajina.A260325_102331_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Írán chce vybírat poplatky v Hormuzském průlivu i konec sankcí. Nereálné, zní z USA",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/iran-usa-valka-plan-jednani-podminky-blizky-vychod.A260325_094504_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Největší útok v posledním roce. V Rusku hoří přístav, statisíce lidí jsou bez proudu",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-dron-utok-belgorod-vypadek-elektrina.A260325_094122_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Evropští vědci varují Komisi: Dezinformace o nikotinu ohrožují veřejné zdraví",
-      "link": "https://www.idnes.cz/zpravy/domaci/evropska-komise-eu-koureni-alternativy-tabak-cigareta.A260323_153904_domaci_iape#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Pentagon vyšle na Blízký východ další tisíce vojáků, navyšuje kapacity kolem Íránu",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/usa-pentagon-armada-vojaci-blizky-vychod-iran.A260325_091633_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Samé hory, dlouhá pobřeží, 90 milionů lidí. Proč Trump proti Íránu nemůže vyhrát",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/iran-usa-valka-teren-hory-zagros.A260324_153015_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
