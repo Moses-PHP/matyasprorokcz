@@ -1,20 +1,64 @@
 {
   "items": [
     {
+      "title": "Další znásilnění? Feri je podle soudu nevinný, obžaloba navrhovala rok vězení navíc",
+      "link": "https://www.idnes.cz/zpravy/domaci/feri-soud-zaverecne-reci-znasilneni.A260515_153458_domaci_mul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Hlavní je ČEZ a inflace, o summitu NATO řeč nebyla, řekl Havlíček po schůzce s Pavlem",
+      "link": "https://www.idnes.cz/zpravy/domaci/schuzka-ministr-havlicek-prezident-petr-pavel-hrad.A260518_113628_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Ukrajina vyvinula svou první řízenou leteckou bombu, ukázala záběry",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-ma-svou-prvni-rizenou-leteckou-bombu-chysta-testy-nove-strely.A260518_142632_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Přijímačky na vysoké čeká změna. Školy musí zvládat dělat testy samy, říká Plaga",
+      "link": "https://www.idnes.cz/zpravy/domaci/prijimaci-zkousky-vysoka-skola-robert-plaga-ano-prijimacky.A260517_173834_domaci_jans#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Řehku v čele armády vystřídá Hlaváč. Zůna řekl, proč pro něj nehlasoval",
+      "link": "https://www.idnes.cz/zpravy/domaci/hlavac-rehka-armada-generalni-nacelnik.A260518_142936_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Vidět Zemi jako astronaut. Avatar Aleše Svobody provází děti vesmírným letem",
+      "link": "https://www.idnes.cz/brno/zpravy/spacebuzz-maketa-rakety-ales-svoboda-ceska-cesta-do-vesmiru.A260518_121414_brno-zpravy_mls#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Vláda schválila nárůst rodičovské na 400 tisíc korun. Koho se má týkat?",
+      "link": "https://www.idnes.cz/zpravy/domaci/vlada-zvyseni-rodicovskeho-prispevku-dalnicni-znamka.A260518_081807_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Na Maledivách našli těla čtyř Italů, kteří zahynuli v podvodní jeskyni",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/potapeci-nasli-tela-ctyr-italu-kteri-ve-ctvrtek-zemreli-na-maledivach.A260518_135410_zahranicni_ichuc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Sbírka na letenku pro prezidenta je falešná. Ministerstvo nepoznalo e-mail",
+      "link": "https://www.idnes.cz/magaziny/koktejl/sbirka-na-letenku-pro-prezidenta-je-falesna-ministerstvo-nepoznalo-e-mail.A260518_110640_koktejl_wall#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Už žádné obíhání doktorů. Ženy nebudou nově potřebovat žádanku na mamograf",
+      "link": "https://www.idnes.cz/zpravy/domaci/mamograf-zadanka-zena-vysetreni-rakoviny-prsu-vzp.A260518_133845_domaci_ichuc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Slovenské úřady uznaly chybu. Odpustí prodejci langošů pokutu za chybějící diakritiku",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/slovensko-podnikatel-langose-chyby-uctenka-omluva.A260518_131241_eko-zahranicni_rie#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Okamura nakonec nenavštíví SAE a Omán. V regionu už byl Macinka, vysvětluje mluvčí",
+      "link": "https://www.idnes.cz/zpravy/domaci/okamura-macinka-zrusena-cesta-oman-emiraty.A260518_130254_domaci_ichuc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "VIDEO: Magyar našel ve sklepě úřadu pytle skartovaných dokumentů. A nejen to",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/madarsko-premier-peter-magyar-objev-zaloba-sklep-ministerstvo-vystavby-a-dopravy-viktor-orban-volby.A260518_114001_zahranicni_idh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
       "title": "Prestižní Globsec opět v Praze. Konferenci zahájí Pavel, zastoupení zemí je rekordní",
       "link": "https://www.idnes.cz/zpravy/domaci/globsec-praha-bezpecnostni-forum-rehka-pavel-armada.A260518_090843_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Feri u soudu zpochybňoval výpověď dívky. Žalobkyně navrhuje další rok vězení",
-      "link": "https://www.idnes.cz/zpravy/domaci/feri-soud-zaverecne-reci-znasilneni.A260515_153458_domaci_mul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
       "title": "Merkelová? Nebo snad Seagal? Evropa hledá vyslance pro jednání s Putinem",
       "link": "https://www.idnes.cz/zpravy/zahranicni/evropa-hleda-vyslance-pro-mirova-jednani-o-ukrajine-pise-politico.A260518_123450_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Prezident přijme na Hradě vicepremiéra Havlíčka",
-      "link": "https://www.idnes.cz/zpravy/domaci/schuzka-ministr-havlicek-prezident-petr-pavel-hrad.A260518_113628_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Soud s lobbistou Dědicem začíná nanovo. Předseda senátu přečte tři tisíce stran spisu",
@@ -43,34 +87,6 @@
     {
       "title": "Setkání se Zelenskou, návštěva Downing Street. Pavlová jednala s prvními dámami",
       "link": "https://www.idnes.cz/zpravy/domaci/pavlova-londyn-konference-zelenska-starmer-premier.A260518_103234_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Nejlepší prezident byl Havel, zjistil průzkum. Pavel si pohoršil u voličů vlády",
-      "link": "https://www.idnes.cz/zpravy/domaci/pruzkum-prezidenti-po-roce-1989-lide-hodnoceni-vitez-vaclav-havel.A260518_104232_domaci_vank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Jermak opustil vazbu, sehnal desítky milionů na kauci",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-korupce-jermak-vazba-vezeni-kauce.A260518_090306_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Vladimire Vladimiroviči, dodržujme zákony. Rus v Ermitáži usedl na trůn, pak tasil nůž",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-petrohrad-ermitaz-podnikatel-stiznosti-vladimir-putin-video.A260518_093744_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Volby 2026: kdy budou, jak se v nich hlasuje a kde se volí do Senátu",
-      "link": "https://www.idnes.cz/volby/volby-2026-komunalni-senatni-termin-kdo-kandiduje-vysledky.A251031_093322_volby_wall#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Bělorusko nacvičuje s Rusy použití jaderných hlavic. Není to hrozba, tvrdí",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/belorusko-nacvicuje-s-rusy-pouziti-jadernych-hlavic-neni-to-hrozba-tvrdi.A260518_102339_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ukrajince nazývala nacisty, nenávistně psala i o Pirátech. U Ústavního soudu neuspěla",
-      "link": "https://www.idnes.cz/zpravy/domaci/ustavni-soud-ukrajina-pirati-nela-liskova.A260518_085911_domaci_pluh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Daniel Landa ukázal rozbité okno svého domu. Uberte trochu, vzkázal",
-      "link": "https://www.idnes.cz/zpravy/revue/spolecnost/daniel-landa-zpevak-rozbite-okno-agrese-konflikt-vzkaz-orlik.A260518_085834_lidicky_sub#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
