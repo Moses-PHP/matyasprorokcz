@@ -1,6 +1,58 @@
 {
   "items": [
     {
+      "title": "Moravec spustil nový projekt. Ve stejný čas jako ČT nasadí debaty, řekl i prvního hosta",
+      "link": "https://www.idnes.cz/zpravy/domaci/vaclav-moravec-moderator-projekt-debata.A260521_160309_domaci_tty#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Přijetí podezřelého na ebolu kritizuje opět Okamura. USA samy zpřísnily pravidla, píše",
+      "link": "https://www.idnes.cz/zpravy/domaci/prijeti-podezreleho-na-ebolu-kritizuje-opet-okamura-usa-samy-zprisnily-pravidla-pise.A260521_164432_domaci_ichuc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Bavorské strany podpořily sudetský sjezd v Brně, AfD žádá zrušení dekretů",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/sjezdu-sudetskych-nemcu.A260521_163822_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Sudetský sjezd: Otec by byl zklamaný z toho hněvu, řekl Winton při pietě",
+      "link": "https://www.idnes.cz/brno/zpravy/sudetsti-nemci-ucteni-pamatky-holokaust-protesty-brno-posselt-sjezd.A260521_104048_brno-zpravy_mos1#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "„I přes bohaté nabídky jsem odmítl.“ Turek nebude kandidovat v podzimních volbách",
+      "link": "https://www.idnes.cz/zpravy/domaci/komunalni-volby-filip-turek-nebude-kandidovat-na-primatora-praha.A260521_143421_domaci_chtl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Kinžaly, ponorky... Rusové na závěr cvičení předvedli strategické jaderné zbraně",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-belorusko-cviceni-jaderne-zbrane-ukrajina-valka.A260521_114151_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Čína je silná jako nikdy dřív, může za to impulzivní Trump, míní polský novinář",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/iran-a-cina-maji-paky-na-svetovou-ekonomiku-muze-za-to-trump-mini-sierakowski.A260520_190116_zahranicni_meli#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Firmy reagují na válku. Už je připravila o půl bilionu korun, vyčíslila analýza",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/aerolinky-konflikt-iran-naklady-inflace-zdrazeni-produkty.A260518_120949_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "RECENZE: Temné fantasy Alchemised nechybí ambice, ale naráží na své limity",
+      "link": "https://www.idnes.cz/kultura/literatura/alchemised-senlinyu-recenze-fantasy.A260520_103432_literatura_jgo#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Summit NATO 2026: Kdy se koná a o čem budou světoví lídři jednat",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/summit-nato-2026-kdy-se-kona-a-o-cem-budou-svetovi-lidri-jednat.A260521_135017_zahranicni_hrat#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Beneš má stále rudé ruce. Nulová škoda, tvrdí aktivisté. Drsný vzkaz exprezidenta Zemana",
+      "link": "https://www.idnes.cz/brno/zpravy/benes-brno-socha-kocko-zeman-hasek-aktiviste.A260521_103329_brno-zpravy_icer#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Šéf vojenské nemocnice Masopust skončí, obranu požádal o přeložení",
+      "link": "https://www.idnes.cz/zpravy/domaci/sef-vojenske-nemocnice-masopust-skonci-ve-funkci.A260521_102459_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Dva mrtví po zásahu rafinerie v Syzrani. Neukazujte záběry, apelují ruské úřady",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/dva-mrtvi-po-zasahu-rafinerie-v-syzrani-neukazujte-zabery-apeluji-ruske-urady.A260521_103239_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
       "title": "Hnutí ANO v Brně marně hledá kandidáta na primátora, „obětuje se“ poslanec Trojan",
       "link": "https://www.idnes.cz/brno/zpravy/komunalni-volby-2026-hnuti-ano-lidr-primator-vaclav-trojan.A260521_134143_brno-zpravy_mos1#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
@@ -15,30 +67,6 @@
     {
       "title": "Hřib si drží vliv na dopravu v Praze. Asistenta mu dělá poradce radního Beránka",
       "link": "https://www.idnes.cz/zpravy/domaci/david-fickert-zdenek-hrib-asistent-beranek.A260517_152315_domaci_rts#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Nebudeme spolehlivý spojenec, varuje Řehka před neplněním aliančních závazků",
-      "link": "https://www.idnes.cz/zpravy/domaci/rehka-nacelnik-generalniho-stabu-vydaje-na-obranu-nato-armada.A260521_132822_domaci_ikro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Nevidím problém, platby chodí, odmítá Fico rezoluci europarlamentu k fondům",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/slovensko-rezoluce-evropsky-parlament-robert-fico-tomas-zdechovsky.A260521_122254_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Předák sudetských Němců s Wintonem uctí oběti holokaustu, očekává se i protest",
-      "link": "https://www.idnes.cz/brno/zpravy/sudetsti-nemci-ucteni-pamatky-holokaust-protesty-brno-posselt-sjezd.A260521_104048_brno-zpravy_mos1#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Kinžaly, ponorky... Rusové na závěr cvičení předvedli strategické jaderné zbraně",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-belorusko-cviceni-jaderne-zbrane-ukrajina-valka.A260521_114151_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Zemědělství je v krizi, varuje prezident Agrární komory. Volá po zásahu státu",
-      "link": "https://www.idnes.cz/ekonomika/domaci/agrarni-komora-jan-dolezal-zemedelstvi-krize.A260521_105236_ekonomika_rie#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Beneš má stále rudé ruce. Nulová škoda, tvrdí aktivisté. Drsný vzkaz exprezidenta Zemana",
-      "link": "https://www.idnes.cz/brno/zpravy/benes-brno-socha-kocko-zeman-hasek-aktiviste.A260521_103329_brno-zpravy_icer#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
