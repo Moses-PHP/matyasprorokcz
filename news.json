@@ -1,8 +1,44 @@
 {
   "items": [
     {
-      "title": "Koalice má nový návrh k ČT. Osvobozeni od placení poplatků mají být lidé nad 75 let",
+      "title": "Ministr Macinka navštíví USA, promluví na zasedání Rady bezpečnosti OSN",
+      "link": "https://www.idnes.cz/zpravy/domaci/macinka-tento-tyden-na-navsteve-usa-promluvi-na-zasedani-rady-bezpecnosti-osn.A260525_165547_domaci_iluj#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Babiš chce do Vánoc zcela zrušit poplatky ČT. Koalice ale má i druhý návrh",
       "link": "https://www.idnes.cz/zpravy/domaci/koalice-s-klempirem-projedna-jeho-navrh-na-zruseni-poplatku-ct-a-rozhlasu-protest-urad-vlady.A260525_060837_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Opusťte Kyjev, vyzvalo Rusko cizince. Spouští další údery, nazývá je odvetou",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-dron-utoky-kyjev-mrtvi-zraneni-starobilsk.A260525_132209_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "„Michl mě rozčiluje.“ Babiš vyzval guvernéra ČNB ke snížení úrokových sazeb",
+      "link": "https://www.idnes.cz/zpravy/domaci/babis-vyzval-guvernera-cnb-michla-ke-snizeni-urokovych-sazeb.A260525_154014_domaci_tmps#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Plaga zastavil kritizované testování žáků. Šéf inspektorů uznal chyby v komunikaci",
+      "link": "https://www.idnes.cz/zpravy/domaci/plaga-ministr-skolstvi-ceska-skolni-inspekce-testovani.A260525_144420_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "AI hrstky soukromníků je mocný zesilovač dezinformací, varuje Lev XIV. v encyklice",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/papez-v-encyklice-o-ai-varoval-pred-dezinformacemi-a-dopady-umele-inteligence.A260525_152342_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Hvězda Hry o trůny a Gangů z Birminghamu Aidan Gillen míří do Zlína",
+      "link": "https://www.idnes.cz/zlin/zpravy/zlin-film-fest-hry-o-truny-malicek-gillen-trad.A260525_144417_zlin-zpravy_jfuk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Orbán bral víc než dvojnásobek. Magyar omezí výdaje, seškrtá i vlastní plat",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/madarsko-magyar-skrty-uspory-vlada-plat.A260525_151343_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Česku chybí data o dětech odsouzených rodičů, úřady se o nich dozvídají náhodně",
+      "link": "https://www.idnes.cz/zpravy/domaci/deti-vezeni-rodice-ospod-urady.A260525_122417_domaci_tty#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Bůh povolá a vše jde stranou. Navzdory krizím Mekku zaplnilo přes milion muslimů",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/puldruheho-milionu-muslimu-v-mekce-zahajilo-obrady-velke-pouti.A260525_135131_zahranicni_tmps/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Vláda přitvrzuje vůči uprchlíkům z Ukrajiny. Říká, že bojuje proti „dávkové turistice“",
@@ -15,38 +51,6 @@
     {
       "title": "„Nebýt jí, Rusové by byli v Berlíně.“ Ves na jihu Ukrajiny odolává déle než Kartágo",
       "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-valka-mala-tokmacka-rekord-rusko-invaze-frontova-linie.A260525_134308_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Naprosto nečekané, řekli o smrtelném útoku slona na plachou samici zoologové",
-      "link": "https://www.idnes.cz/zlin/zpravy/slon-jack-zoo-zlin-samice-ula-napadeni-uhynuti-odbornici.A260525_083553_zlin-zpravy_jfuk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Favoritem na příštího prezidenta je Pavel, tvrdí průzkum. V závěsu jsou Babiš a Eben",
-      "link": "https://www.idnes.cz/zpravy/domaci/pruzkum-spolecnosti-stem-mark-budouci-prezident.A260525_125511_domaci_vank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "V útocích na Kyjev budeme pokračovat, je to odveta, oznámilo Rusko",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-dron-utoky-kyjev-mrtvi-zraneni-starobilsk.A260525_132209_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Regulace cen pohonných hmot bude pokračovat i v červnu, rozhodla vláda",
-      "link": "https://www.idnes.cz/zpravy/domaci/regulace-cen-pohonnych-hmot-bude-pokracovat-i-v-cervnu-rozhodla-vlada.A260525_123642_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Hlavní hrozbou je Rusko. Nesmíme strkat hlavu do písku, varoval Řehka",
-      "link": "https://www.idnes.cz/zpravy/domaci/generalove-bezpecnostni-seminar-rusko-hrozba.A260525_104338_domaci_mul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "OBRAZEM: Posselt u cimbálu i policejní „kravata“. Brno ovládl sudetský sjezd",
-      "link": "https://www.idnes.cz/zpravy/domaci/sudetonemecke-krajanske-sdruzeni-meeting-brno-sjezd-posselt-sudetsky-sjezd-usmireni.A260525_104217_domaci_top/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "S tímhle zajícem by si ani vlk neporadil. Vyskočil z pole a srazil muže z koloběžky",
-      "link": "https://www.idnes.cz/magaziny/koktejl/s-timhle-zajicem-by-si-ani-vlk-neporadil-vyskocil-z-pole-a-srazil-muze-z-kolobezky.A260525_105037_koktejl_wall#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Policie pročesává lesy, hledá zmateného seniora. Poznávacím prvkem je jeho kolo",
-      "link": "https://www.idnes.cz/hradec-kralove/zpravy/patrani-senior-hradec-tyniste-krnovice-demence-skladacka.A260525_112803_hradec-zpravy_tuu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
