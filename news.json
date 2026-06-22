@@ -1,36 +1,56 @@
 {
   "items": [
     {
-      "title": "ČT a rozhlas jsou ve stávce. Vysílání začíná se zpožděním, zaměstnanci oblékli černou",
+      "title": "ČT a rozhlas jsou ve stávce. Vysílání začíná se zpožděním, před budovami protestují",
       "link": "https://www.idnes.cz/zpravy/domaci/ct-cro-stavka-demonstrace-zruseni-koncesionarskych-poplatku-program.A260621_204127_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Před útulkem někdo uvázal psa. Nechal mu tam granule i lístek se jménem",
-      "link": "https://www.idnes.cz/ceske-budejovice/zpravy/straznici-utulek-pes-krizenec-majitel-tyrani-uvazaneho-sedativa.A260622_084451_budejovice-zpravy_khr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Starmer končí. V čele labouristů hned, premiérem zůstane do výběru nástupce",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/labouriste-premier-starmer-britanie.A260622_104150_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Kdo poletí na summit NATO? Nechci mít konflikty s prezidentem, řekl Babiš",
+      "title": "Alkohol k pohotovosti nepatří. Prezidentův řidič neuspěl s odvoláním, u policie končí",
+      "link": "https://www.idnes.cz/hradec-kralove/zpravy/soud-ridic-prezident-petr-pavel-nehoda-alkohol-cermna-nachod.A260622_095517_hradec-zpravy_tuu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Nález munice paralyzuje centrum Brna. Lidé se evakuují, zastavily se i vlaky",
+      "link": "https://www.idnes.cz/brno/zpravy/nalez-letecka-puma-nadrazi-pyrotechnik-uzavreno.A260622_103722_brno-zpravy_ba#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Prokopa odvolali z dozorčí rady DPP. Vadím Pirátům, kauzu bytů jsem vysvětlil, reaguje",
+      "link": "https://www.idnes.cz/zpravy/domaci/radni-prahy-ondrej-prokop-odvolali-dozorci-rada-dopravniho-podniku.A260622_111647_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Státní zástupce obžaloval pekárnu Agrofertu a dva lidi kvůli dotacím na linku",
+      "link": "https://www.idnes.cz/zpravy/domaci/statni-zastupce-pekarna-inovacni-linka-dotace-obzaloba.A260622_112609_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Hoří Moskva, něco si přej! Špidlova Nová sociální demokracie podpořila Ukrajinu",
+      "link": "https://www.idnes.cz/zpravy/domaci/hori-moskva-neco-si-prej-spidlova-nova-socialni-demokracie-podporila-ukrajinu.A260622_104035_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Francii sužuje vlna veder. Ruší se akce a omezuje konzumace alkoholu",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/francii-suzuje-vlna-veder-rusi-se-akce-a-omezuje-konzumace-alkoholu.A260622_095540_eko-zahranicni_jadv#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Ruská ruleta na Krymu. Pláže jsou plné, odříznutému poloostrovu hrozí evakuace",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-krym-dovolena-plaz-turiste-palivo.A260622_104635_zahranicni_dtt/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Covfefe 2.0. Trump na Den otců zveřejnil fotku cizí ženy, nikdo neví proč",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/usa-donald-trump-den-otcu-fotografie-zena-truth-social-covfefe.A260622_094317_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Vláda rozhoduje o delegaci na summit NATO. Když nevezme i Pavla, hrozí jí žaloba",
       "link": "https://www.idnes.cz/zpravy/domaci/vlada-rozhodnuti-o-slozeni-delegace-na-summit-nato-v-ankare.A260622_052217_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Summit NATO 2026 v Ankaře",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/summit-nato-2026-v-ankare-termin-delegace-cesko.A260521_135017_zahranicni_hrat#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Rusové zasáhli tureckou loď, zabili člena posádky, oznámil Kyjev",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusove-zasahli-tureckou-lod-zabili-clena-posadky-oznamil-kyjev.A260622_102239_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Demonstrace byla o penězích, ne o hodnotách či nezávislosti, míní Klempíř",
-      "link": "https://www.idnes.cz/zpravy/domaci/demonstrace-milion-chvilek-oto-klempir-ceska-televize-cesky-rozhlas.A260622_073759_domaci_pari#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "V Kolumbii těsně vyhrál pravičák de la Espriella podporovaný Trumpem",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/kolumbii-povede-pravicovy-abelardo-de-la-espriella-vyhral-tesne-volby.A260622_000334_zahranicni_air#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Izrael neustoupí z jihu Libanonu. Netanjahu trvá na bezpečnostní zóně",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/izrael-vojaci-zustanou-na-jihu-libanonu-netanjahu.A260621_225054_zahranicni_ikul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Zemřel Castrův blízký spolupracovník Ramiro Valdés. Bylo mu 94 let",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/ramiro-valdes-zemrel-hrdina-kubanske-revoluce-castro.A260621_221334_zahranicni_ikul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Rezignuje, selhal. Trump Starmera veřejně odepsal, Brity to šokovalo",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-britanie-usa-starmer-rezignace.A260622_093232_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
