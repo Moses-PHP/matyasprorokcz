@@ -1,24 +1,44 @@
 {
   "items": [
     {
+      "title": "Koalice zkouší omezení pravomocí Pavla. Okopávají kotníky, kritizuje vládu Rakušan",
+      "link": "https://www.idnes.cz/zpravy/domaci/snemovna-omezeni-pravomoci-prezidenta-renta-pro-uspesne-sportovce.A260701_042839_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Past, varuje TOP 09 před změnou jednacího řádu kvůli bitvě politiků o ČT",
+      "link": "https://www.idnes.cz/zpravy/domaci/top-09-varuje-pred-zmenou-jednaciho-radu-pred-jednanim-o-konci-poplatku-pro-ct.A260701_093909_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Pražská ÚVN má nového ředitele, ten dosavadní požádal po razii o převelení",
+      "link": "https://www.idnes.cz/zpravy/domaci/ludek-hana-ustredni-vojenska-nemocnice-reditel.A260701_100344_domaci_kurl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Využijme okna příležitosti na bojišti, žádá Kyjev EU o miliardovou vojenskou pomoc",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-valka-rusko-eu-pomoc-fedorov.A260701_094754_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
       "title": "Babiš dostal od Agrofertu přes čtyři miliardy, vyplývá z majetkového přiznání",
       "link": "https://www.idnes.cz/zpravy/domaci/babis-priznani-agrofert-dividenda.A260701_091320_domaci_mul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Poslanci rozhodují o omezení pravomocí prezidenta i rentě pro úspěšné sportovce",
-      "link": "https://www.idnes.cz/zpravy/domaci/snemovna-omezeni-pravomoci-prezidenta-renta-pro-uspesne-sportovce.A260701_042839_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Krypto je pro Trumpa zlatý důl. Vydělal na něm přes miliardu dolarů",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/trump-kryptomeny.A260701_092424_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Boj o miliardy nevyšel. Ústavní soud odmítl přepsat pravidla pro kraje",
+      "title": "Klempíř: Prezidentovi jsem vysvětlil, že veřejnoprávní média náš zákon neohrožuje",
+      "link": "https://www.idnes.cz/zpravy/domaci/klempir-uvedl-ze-pavlovi-vysvetlil-ze-vladni-navrh-ct-a-cro-neohrozuje.A260701_090201_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Tejc v kauze zavražděné Viktorky podal kárnou žalobu na soudkyni i podnět vůči OSPOD",
+      "link": "https://www.idnes.cz/zpravy/domaci/tejc-karna-zaloba-soudkyne-vydani-divky-vrazda-otec.A260701_082420_domaci_mikp#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Boj o miliardy z daní nevyšel. ÚS odmítl přepsat pravidla pro kraje",
       "link": "https://www.idnes.cz/brno/zpravy/ustavni-soud-rozpoctove-urceni-dani-kraje-vlada-spor-senatori-ustavni-stiznost.A260629_145957_brno-zpravy_mls#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Policie odložila kauzu machinací na hokejovém svazu. Kritika se teď snáší na Hadamczika",
       "link": "https://www.idnes.cz/zpravy/domaci/hadamczik-hokej-svaz-machinace-policie-odlozit-pripad-kauza.A260701_083128_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Tejc podal kárnou žalobu na soudkyni kvůli vydání dívky, kterou pak zavraždil otec",
-      "link": "https://www.idnes.cz/zpravy/domaci/tejc-karna-zaloba-soudkyne-vydani-divky-vrazda-otec.A260701_082420_domaci_mikp#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Irsko přebírá vedení EU. Priorita je bezpečnost a podpora Ukrajiny, hlásí",
@@ -35,42 +55,6 @@
     {
       "title": "Ukrajinské drony kazí Rusům jejich dovolené. Cestování se mění v chaos",
       "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajinske-drony-kazi-rusum-jejich-dovolene-cestovani-se-meni-v-chaos.A260630_164810_zahranicni_bury#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Jak to mají absolventi se zdravotním pojištěním? Přinášíme přehled všech variant",
-      "link": "https://www.idnes.cz/finance/financni-radce/absolventi-zdravotni-pojisteni-varianty-odvody-samoplatce.A260629_093646_viteze_sov#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Čeští vojáci se budou čím dál víc učit od těch ukrajinských, naznačil šéf armády",
-      "link": "https://www.idnes.cz/zpravy/domaci/ceska-armada-studovat-bojove-zkusenosti-ukrajina-vojaci.A260630_213401_domaci_fohl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ženu v čele monarchie? To raději adopci. Japonci řešili vymírající císařskou rodinu",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/japonsko-vlada-cisarska-rodina-vymirani-potomek-hirohito.A260630_212938_zahranicni_votr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Rodičovský příspěvek má vzrůst na 400 tisíc, opozice navrhuje jeho valorizaci",
-      "link": "https://www.idnes.cz/zpravy/domaci/snemovna-zvyseni-rodicovskeho-prispevku-na-400-tisic-korun.A260630_053615_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ať Macinka zastropuje teplotu ve městech na 25 stupňů, navrhoval Pirát Bartoš",
-      "link": "https://www.idnes.cz/zpravy/domaci/pirat-bartos-navrhoval-at-macinka-zastropuje-teplotu-ve-mestech-na-25-stupnu.A260630_194520_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "V ženských týmech mohou být jen biologické ženy, potvrdil Nejvyšší soud USA",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/nejvyssi-soud-usa-potvrdil-zakaz-ucasti-transgenderovych-osob-v-zenskych-tymech.A260630_162902_zahranicni_ikul#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Lukašenko se kroutí z ruského sevření. Vzdoruje Kremlu, jel žalovat do Pekingu",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/lukasenko-belorusko-rusko-cina-rakety.A260630_090927_zahranicni_aha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Summit v Ankaře: naškrobení taxikáři, zákaz svobody projevu i toulavých psů",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/summit-nato-ankara-taxikari-turecko.A260630_190052_zahranicni_aya#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Měli jste zmizet do dneška. V JAR hrozí pogromy proti migrantům, obchody zavřely",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/v-jar-se-ocekavaji-nasilne-protiimigracni-protesty-mnoho-obchodu-ma-zavreno.A260630_094246_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
