@@ -1,12 +1,48 @@
 {
   "items": [
     {
-      "title": "Prezident Pavel přijel na festival do Varů. Zamířil na kultovní devadesátkový film",
-      "link": "https://www.idnes.cz/kultura/film-televize/kviff-2026-petr-pavel-karlovy-vary-film-septej.A260709_105210_filmvideo_pitt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Premiér Babiš zhodnotí, jak se jeho vládě daří plnit svůj program",
+      "link": "https://www.idnes.cz/zpravy/domaci/premier-babis-hodnoceni-plneni-programoveho-prohlaseni-vlady.A260709_042933_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Okamura se bojí o krk, konflikt v koalici bude narůstat, očekává ODS",
+      "link": "https://www.idnes.cz/zpravy/domaci/ods-ocekava-ze-bude-narustat-konflikt-mezi-okamurovou-spd-a-zbytkem-vladni-koalice.A260709_111010_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Je úplně k ničemu. Šéf Ryanairu se ostře opřel do von der Leyenové",
+      "link": "https://www.idnes.cz/ekonomika/doprava/ryanair-leyenova.A260709_150630_eko-doprava_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Opozice se baví nad fotkou Babiše a Trumpa. Nevnutil jsem se, odmítl premiér",
+      "link": "https://www.idnes.cz/zpravy/domaci/premier-andrej-babis-a-prezident-donald-trump-kritika-opozice-reakce.A260709_141409_domaci_vank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Rakušan pochválil vládu za to, co nezrušila. Vyčítá jí atmosféru strachu",
       "link": "https://www.idnes.cz/zpravy/domaci/sef-stan-rakusan-pochvalil-vladu-za-to-ze-nezrusil-to-co-slibovala-ze-zrusi.A260709_123257_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Unikátní kousek. Na policii se dostala zkušební pistole, existuje jich jen deset",
+      "link": "https://www.idnes.cz/liberec/zpravy/vzacna-pistole-zbrojovka-brno-zbranova-amnestie-policie.A260709_140854_liberec-zpravy_makl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Řím kvůli špionáži vyhostí přidělence na ruské ambasádě, Kreml slíbil odvetu",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-italie-ambasada-diplomacie-vyhosteni.A260709_142937_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Tady na ni snad ukrajinské drony nedosáhnou. Putinovu jachtu ukryli na dalekém severu",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-vladimir-putin-jachta-graceful-severomorsk-ukrajina-valka-drony.A260709_131526_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Netradiční dárek od Erdogana. Lídři dostali na summitu NATO luxusní revolvery",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/netradicni-darek-od-erdogana-lidri-dostali-na-summitu-nato-luxusni-pistole.A260709_091621_zahranicni_varg#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Licence na patrioty pro Kyjev Moskvu zaskočila. Je to chyba, řekl Peskov",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/kreml-licence-na-vyrobu-strel-patriot-pro-kyjev-je-pro-nas-novou-informaci.A260709_132509_zahranicni_tbr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Prezident Pavel přijel na festival do Varů. Zamířil na kultovní devadesátkový film",
+      "link": "https://www.idnes.cz/kultura/film-televize/kviff-2026-petr-pavel-karlovy-vary-film-septej.A260709_105210_filmvideo_pitt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Způsobilý bez výjimek. Pavel ukázal lékařskou zprávu, lékař mu doporučil dietu",
@@ -15,50 +51,6 @@
     {
       "title": "Pokladní systémy již testují EET 2.0. Ostrý start se chystá na leden 2027",
       "link": "https://www.idnes.cz/ekonomika/domaci/eet-2-0-aplikace-platby-gastro.A260708_121348_ekonomika_vebe#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Babiš zhodnotí, jak se vládě daří plnit program. Střídají se u něj ministři",
-      "link": "https://www.idnes.cz/zpravy/domaci/premier-babis-hodnoceni-plneni-programoveho-prohlaseni-vlady.A260709_042933_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Okamura se bojí o krk, konflikt v koalici bude narůstat, očekává ODS",
-      "link": "https://www.idnes.cz/zpravy/domaci/ods-ocekava-ze-bude-narustat-konflikt-mezi-okamurovou-spd-a-zbytkem-vladni-koalice.A260709_111010_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "VIDEO: V Praze přistál americký vládní letoun. Předvedl se v nových barvách",
-      "link": "https://www.idnes.cz/zpravy/domaci/letiste-vaclava-havla-v-praze-pristani-americkeho-vladniho-letounu.A260709_110414_domaci_vank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Dokument Kdyby se holubi proměnili ve zlato se nebojí AI ani básnických obratů",
-      "link": "https://www.idnes.cz/kultura/film-televize/kdyby-se-holubi-promenili-ve-zlato-kviff-2026-premiera.A260708_143158_recepty-magazin_zuva#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ruský poslanec vyzval k vyhlazení poloviny Ukrajinců, osobní otázku ale neustál",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-rusko-valka-duma-poslanec-zuravlev-genocida.A260708_114804_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Pavel varuje: Ukrajina má poslední dva měsíce na obnovení mírových rozhovorů",
-      "link": "https://www.idnes.cz/zpravy/domaci/ukrajina-petr-pavel-mirove-rozhovory-valka-rusko-rozhovor.A260709_091416_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Čeští politici v zahraničních médiích: Macinka zaujal díky Clintonové, Okamura kontroverzemi",
-      "link": "https://www.idnes.cz/zpravy/domaci/analyza-babis-pavel-okamura-macinka-fiala-kupka-media-anglickojazycna-ukrajina-newsmatics.A260709_085511_domaci_fohl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Okamura zuří kvůli zbraním pro Ukrajinu. Detaily jsem neznal, přiznal jeho ministr",
-      "link": "https://www.idnes.cz/zpravy/domaci/zuna-prevod-penez-zbrane-ukrajina-macinka.A260709_090012_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Německo nakoupí a rozmístí řízené střely Tomahawk. Dohodlo se s USA",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/nemecko-usa-tomahawk.A260709_104557_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Írán jsou Japonci, Zelenskyj je Putin. Trumpovy přeřeky vzbudily obavy o jeho zdraví",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-japonsko-iran-islamska-republika-lod-zelenskyj-summit-nato.A260709_101352_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Brusel zvažuje větší flexibilitu emisních povolenek. O návrhu se stále jedná",
-      "link": "https://www.idnes.cz/ekonomika/domaci/ek-ets-1.A260708_135226_ekonomika_hyk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
