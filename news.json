@@ -1,12 +1,48 @@
 {
   "items": [
     {
-      "title": "Soud zastavil řízení s devíti účastníky útoku na Kapitol. Vyhověl Trumpově vládě",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/usa-kapitol-soud-donald-trump.A260805_070822_zahranicni_pluh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Dvořák má nový návrh na manželství párů LGBT+. Nechce se mi čekat, říká",
+      "link": "https://www.idnes.cz/zpravy/domaci/mistopredseda-stan-dvorak-ma-pripraveny-navrh-na-manzelstvi-stejnopohlavnich-paru.A260805_061202_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Kyjev čelil nočnímu útoku, zemřeli dva lidé. V Rusku hoří další sklad Wildberries",
+      "title": "Kyjev zažil největší útok za poslední dobu. Všechny ruské rakety prošly",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-kyjev-rusko-valka.A260805_095703_zahranicni_pluh/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "USA vyčerpaly až 80 procent střel pro THAAD. Docházejí i balistické rakety",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/cnn-usa-vycerpaly-80-procent-strel-pro-klicovy-system-protivzdusne-obrany-thaad.A260805_102421_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Ukrajina nepotřebuje diktátora, ale politické profesionály, říká ukrajinistka",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rozstrel-lenka-vichova-ukrajinistka-zelenskyj-valka-diktator.A260804_134804_zahranicni_vov#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Velká AI smršť. Čína chrlí jeden model za druhým a likviduje americký náskok",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/cina-ai-modely.A260804_092123_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Ústavní soud zavalily stížnosti v bitcoinové kauze. Obrátili se na něj Blažek i Jiřikovský",
+      "link": "https://www.idnes.cz/zpravy/domaci/rozhodnuti-ustavni-soud-cekat-devet-stiznosti-v-bitcoinove-kauze.A260805_085633_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Agenti AI si vytvářeli falešné identity. Chtěli se nabourat do cizích systémů",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/agenti-ai-openai-anthropic.A260805_093028_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "V kladenském průmyslovém areálu zemřel muž. Spadl z mostového jeřábu",
+      "link": "https://www.idnes.cz/praha/zpravy/kladno-prumyslovy-areal-nehoda-smrt-mostovy-jerab.A260805_084801_praha-zpravy_hock#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Rusko útočilo na Kyjev a okolí, 15 mrtvých. Ukrajinci zasáhli další sklad Wildberries",
       "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-kyjev.A260805_061103_zahranicni_pluh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Nečekaný odchod. Těsně před příchodem prvních pacientů opouští ústav ředitel",
+      "link": "https://www.idnes.cz/brno/zpravy/sanatorium-palava-reditel-antonin-vodak-konec-odchod.A260804_164208_brno-zpravy_azu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Soud zastavil řízení s devíti účastníky útoku na Kapitol. Vyhověl Trumpově vládě",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/usa-kapitol-soud-donald-trump.A260805_070822_zahranicni_pluh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "U Trumpova golfového klubu zadrželi ozbrojeného muže. Údajně mapoval ochranu",
@@ -15,34 +51,6 @@
     {
       "title": "Důchody přehledně: proč se strop na 65 let odkládá, vláda zvažuje extra příspěvek",
       "link": "https://www.idnes.cz/zpravy/domaci/strop-65-let-odchod-do-penze-duchodova-reforma-valorizace.A260804_202639_domaci_krou#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Za půl miliardy mají vzniknout tisíce míst pro nezaměstnané, plánuje ministerstvo",
-      "link": "https://www.idnes.cz/ekonomika/domaci/nezamestnanost-mobilita.A260804_133940_ekonomika_kris#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "V Rudém moři zasáhla střela indickou loď, plavidlo se převrátilo a potopilo",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/indicka-lod-se-potopila-v-rudem-mori-po-zasahu-strelou-uvedlo-dilli.A260804_213549_zahranicni_remy#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ukrajina zajala cizince už 51 národností, kteří bojovali na ruské straně",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-zajala-cizince-z-51-zemi-bojovali-na-ruske-strane-rekl-ombudsman.A260804_212213_zahranicni_remy#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Nejčastější chyby začátečníků s Arduinem: Jak se vyhnout zničeným čipům a frustraci?",
-      "link": "https://www.idnes.cz/magaziny/koktejl/nejcastejsi-chyby-zacatecniku-s-arduinem-jak-se-vyhnout-znicenym-cipum-a-frustraci.A260804_205606_koktejl_chlu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Macinka odmítl, aby exministr Herman byl dál honorárním konzulem",
-      "link": "https://www.idnes.cz/zpravy/domaci/petr-macinka-ministr-daniel-herman-konzul-lichtenstejnsko-patent.A260804_201731_domaci_linh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Proč si stavět chytrou domácnost svépomocí? Odhalte svobodu DIY automatizace",
-      "link": "https://www.idnes.cz/magaziny/koktejl/proc-si-stavet-chytrou-domacnost-svepomoci-odhalte-svobodu-diy-automatizace.A260804_203223_koktejl_chlu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Trpí demencí. Rusko očerňuje ve Francii nepohodlné kandidáty na prezidenta",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-storm1516-francie-volby-kandidati-dezinformace.A260804_193357_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
