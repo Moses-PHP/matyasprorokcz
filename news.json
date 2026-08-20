@@ -1,16 +1,36 @@
 {
   "items": [
     {
+      "title": "Metnar se Schillerovou dohodl vyšší platy policistů a hasičů. Přibudou i nová místa",
+      "link": "https://www.idnes.cz/zpravy/domaci/schillerova-ministerstvo-financi-juchelka-metnar-stastny-rozpocet.A260819_134328_domaci_ikro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Dvě procenta na obranu nestačí, chci to řešit na jednání vlády, řekl Pavel",
+      "link": "https://www.idnes.cz/zpravy/domaci/pavel-prezident-vydaje-obrana-pres-dve-procenta-jednat-vlada.A260820_122926_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Nahrává developerům, umožňuje legalizovat černé stavby, vyčítají návrhu senátoři",
+      "link": "https://www.idnes.cz/zpravy/domaci/senat-novela-stavebniho-zakona-developeri-ustavni-soud.A260820_035214_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Devítihodinový útok na Kyjev. Rusko ho dlouho připravovalo, tvrdí Zelenskyj",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusky-nocni-utok-balistickymi-strelami-na-kyjev-ma-sest-mrtvych.A260820_030338_zahranicni_air#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Rakušanovi chybí debata o klimatické změně. Vadí mu, jak vláda vidí Green Deal",
+      "link": "https://www.idnes.cz/zpravy/domaci/nebavime-se-o-klimaticke-zmene-rekl-rakusan-vytkl-vlade-postoj-ke-green-dealu.A260820_121955_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Další Turkův výstřelek, v šestatřiceti metal jogurty v kulturní památce. Hájí to mládím",
+      "link": "https://www.idnes.cz/zpravy/domaci/poslanec-za-motoristy-filip-turek-video-chovani-pamatkari-kritika.A260820_112914_domaci_vank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
       "title": "Poslouchal Hitlera. Němci identifikovali po 56 letech podezřelého z antisemitského útoku",
       "link": "https://www.idnes.cz/zpravy/zahranicni/nemci-po-56-letech-oznacili-podezreleho-z-utoku-na-zidovsky-domov-v-mnichove.A260820_110856_zahranicni_ichuc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Vy nám sklady, my vám domy i nemocnice. Snímky ukazují peklo ruského teroru",
       "link": "https://www.idnes.cz/zpravy/zahranicni/kyjev-rusky-utok-ukrajina-valka-balisticke-strely.A260820_102528_zahranicni_lupr/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Nahrává developerům, umožňuje legalizovat černé stavby, vyčítají návrhu senátoři",
-      "link": "https://www.idnes.cz/zpravy/domaci/senat-novela-stavebniho-zakona-developeri-ustavni-soud.A260820_035214_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Zemědělství letos čeká propad tržeb o 20 miliard korun, uvedla Agrární komora",
@@ -25,36 +45,12 @@
       "link": "https://www.idnes.cz/zpravy/domaci/macinka-skopje-severni-makedonie-eu-podpora-cesko.A260820_104908_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Schillerová znovu jednala s Juchelkou o rozpočtu. Čísla neřeknu, uvedl",
-      "link": "https://www.idnes.cz/zpravy/domaci/schillerova-ministerstvo-financi-juchelka-metnar-stastny-rozpocet.A260819_134328_domaci_ikro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
       "title": "Nejasné příjmy i byt za 21 milionů. Jaký majetek přiznali končící senátoři",
       "link": "https://www.idnes.cz/zpravy/domaci/nejasne-prijmy-i-byt-za-21-milionu-jaky-majetek-priznali-koncici-senatori.A260819_200533_domaci_tvrk#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Skoro nemohl mluvit ani se zvednout. Muž si přihnul z lahve, ve které bylo ředidlo",
       "link": "https://www.idnes.cz/brno/zpravy/alkohol-redidlo-aceton-otrava-zachrana-straznici.A260820_081647_brno-zpravy_mos1#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Devítihodinový útok na Kyjev. Rusko ho dlouho připravovalo, tvrdí Zelenskyj",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusky-nocni-utok-balistickymi-strelami-na-kyjev-ma-sest-mrtvych.A260820_030338_zahranicni_air#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Otevírací doba obchodů v době svátků v roce 2026",
-      "link": "https://www.idnes.cz/wiki/ekonomika/oteviraci-doba-v-obchodech-v-dobe-svatku.K456717#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Případ vraždy v sektě míří k Nejvyššímu soudu, zubařka podala dovolání",
-      "link": "https://www.idnes.cz/zpravy/domaci/pripad-vrazdy-v-sekte-miri-k-nejvyssimu-soudu-zubarka-podala-dovolani.A260820_085110_domaci_aoc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Trump vyhlásil ekonomickou válku Íránu. Kdo jim pomůže, pocítí důsledky, slíbil",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-vyhlasil-ekonomickou-valku-iranu-pohrozil-vsem-kdo-by-teheranu-pomahali.A260820_062742_zahranicni_iluj#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Děti je milují, uvnitř může být olovo. Pozor na oblíbené mačkací knedlíčky",
-      "link": "https://www.idnes.cz/spotrebitel/test/deti-je-miluji-uvnitr-muze-byt-olovo-pozor-na-oblibene-mackaci-knedlicky.A260819_113043_test_brna#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
