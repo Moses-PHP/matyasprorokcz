@@ -1,6 +1,22 @@
 {
   "items": [
     {
+      "title": "Nebojím se, že budu jako Bartoš. Mrázová o stavebním zákonu i svých kauzách",
+      "link": "https://www.idnes.cz/zpravy/domaci/zuzana-mrazova-ano-stavebni-zakon-dostupne-bydleni.A260904_170046_domaci_krou#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Poslední mobilizace příznivců. AfD proti CDU a spol. I malým stranám jde o hodně",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/afd-cdu-nemecko-volby-sasko-anhaltsko.A260905_183134_zahranicni_lupr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Putin jedná s americkou delegací. Trumpovi vzkázal poděkování",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-kyjev-utok-letiste-witkoff-kushner.A260905_113813_zahranicni_dvou#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Nedělní soud nad Německem: hněv  východu a cesta k absolutní moci",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/kronika-ohlaseneho-selhani-kde-merz-udelal-chybu.A260905_180741_zahranicni_remy#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
       "title": "Polsko omezuje vojenskou závislost na USA. Zbraně chce vlastní i české",
       "link": "https://www.idnes.cz/ekonomika/zahranicni/polsko-evropa-armada-investice-zbrojovky-munice-dily-hdp.A260901_152251_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
@@ -17,7 +33,7 @@
       "link": "https://www.idnes.cz/zpravy/zahranicni/merz-rusko-dronovy-utok-lipsko-nemecko-zasadni-zlom.A260905_153536_zahranicni_lupr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Putin nařídil neútočit tři dny na Kyjev. Kvůli příjezdu amerických vyjednavačů",
+      "title": "Tři dny bez útoků na Moskvu a Kyjev. Putin a Zelenskyj je pozastaví kvůli delegaci USA",
       "link": "https://www.idnes.cz/zpravy/zahranicni/putin-naridil-kvuli-delegaci-usa-na-tri-dny-zastavit-utoky-na-kyjev-rekl-peskov.A260905_140917_zahranicni_kurl#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
@@ -45,10 +61,6 @@
       "link": "https://www.idnes.cz/brno/zpravy/znojmo-nebezpecne-mesto-rvacky-koupaliste-zakaz-vstupu-legislativa.A260904_152024_brno-zpravy_zubr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Trumpovi vyjednavači dorazili do Moskvy, Rusko udeřilo na letiště v Kyjevě",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-kyjev-utok-letiste-witkoff-kushner.A260905_113813_zahranicni_dvou#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
       "title": "Schodek ještě vzroste, tvrdí Hřib. Okamura chce seškrtat pomoc pro Ukrajince",
       "link": "https://www.idnes.cz/zpravy/domaci/tomio-okamura-zdenek-hrib-rozpocet-schodek-vlada-ano-spd-pirati-motoriste-sobe-ukrajinci-pomoc-obran.A260905_115603_domaci_svm#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
@@ -59,14 +71,6 @@
     {
       "title": "Ve flanelce a na Harleyi. Pavel projel v čele 800 motorkářů Prahou",
       "link": "https://www.idnes.cz/praha/zpravy/petr-pavel-spanila-jizda-motorky-praha-vystaviste.A260905_104059_praha-zpravy_lpo#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Segregace migrantů, výlety do někdejších částí Říše. Lídrovi AfD radí neonacisté",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/nemecko-ulrich-siegmund-afd-sasko-anhaltsko-poradci-hdj-neonacismus.A260901_134034_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "TELEVIZIONÁŘ: Člověk by měl odejít v nejlepším, loučí se Štefan Margita",
-      "link": "https://www.idnes.cz/kultura/film-televize/televizionar-stefan-margita.A260903_082635_filmvideo_spm#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
