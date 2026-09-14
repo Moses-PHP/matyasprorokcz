@@ -1,60 +1,80 @@
 {
   "items": [
     {
-      "title": "Útoky opět ženou cenu ropy vzhůru. Brent se vrátil nad 107 dolarů za barel",
-      "link": "https://www.idnes.cz/ekonomika/zahranicni/ropa-utoky-jemen-husiove-fosilni-paliva-iran-saudska-arabie.A260914_114222_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Babiš se bude s Pavlem scházet dle potřeby. Je čas, aby to udělal i Macinka, míní",
+      "link": "https://www.idnes.cz/zpravy/domaci/jednani-pavel-babis-na-hrade-o-zahranicni-politice-valnem-shromazdeni-osn.A260914_054319_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
-      "title": "Finsko jde pod francouzský deštník. Přidá se k programu jaderného odstrašení",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/finsko-jde-pod-francouzsky-destnik-prida-se-k-programu-jaderneho-odstraseni.A260914_125958_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+      "title": "Ukrajina a Rusko zastaví útoky na energetickou infrastrukturu, tvrdí Trump",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-rusko-ukrajina-nafta-energeticka-infrastruktura-iran-valka.A260914_171941_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Zeman volí stejnou strategii v boji o Hrad jako Pavel. Lidé se mohou podobat, přiznal",
+      "link": "https://www.idnes.cz/zpravy/domaci/masaryk-ceskoslovensko-hrob-lany-pavel-zeman-kandidat.A260914_180058_domaci_votr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Brusel potvrdil přerušení plateb Agrofertu. Týká se částky 3,18 milionu eur",
+      "link": "https://www.idnes.cz/zpravy/domaci/ek-eu-agrofert-babis-zdechovsky-stret-milion.A260914_165451_zahranicni_votr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Írán chce dohodu, ale já rozhodnu, zda se USA zapojí do jednání, napsal Trump",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-iran-dohoda-usa-valka.A260914_180904_zahranicni_jhr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Munice pro drony i robot záchranář. Dny NATO 2026 ukážou novinky z českých dílen",
+      "link": "https://www.idnes.cz/zpravy/nato/dny-nato-2026-ostrava-robot-dron-mosnov.A260914_170815_zpr_nato_inc#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Klíčníci vyzvedli korunovační klenoty. Vystaveny budou ve Vladislavském sále",
+      "link": "https://www.idnes.cz/zpravy/domaci/vyjmuti-korunovacnich-klenotu-2026-sejde-se-sedm-klicniku-nasledovat-bude-jejich-vystaveni.A260914_122554_domaci_jira#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Nebudeme dávat dárečky, ale investovat do lidí, hájil Babiš schodek 389 miliard",
+      "link": "https://www.idnes.cz/zpravy/domaci/babs-haji-navrzenys-schodke-na-inkluzi-si-stezuji-vsichni-rekl-okamura.A260914_142621_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Druhá řada Gentlemanů? Stále hledáme něco provokativního, předesílá Guy Ritchie",
+      "link": "https://www.idnes.cz/kultura/film-televize/gentlemani-netflix-guy-ritchie-theo-james.A260911_075836_filmvideo_jgo#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Trestní oznámení i zneužitý účet. Knihovna čelila cílenému útoku, tvrdí Dušek",
+      "link": "https://www.idnes.cz/zpravy/domaci/dusek-sedlacek-kryptomeny-knihovna-havel-trestni-oznameni.A260914_164009_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Trump: Jsem dostatečná pojistka proti nevyzpytatelné umělé inteligenci",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/trump-jsem-dostatecna-pojistka-proti-nevyzpytatelne-umele-inteligenci.A260914_162715_zahranicni_bro#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Putin využívá syndrom vařené žáby. Evropa se rozhodla pustit tajné služby ze řetězu",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/hybridni-hrozby-utoky-zpravodajske-sluzby-eu-cesko-rusko.A260914_123107_zahranicni_rtn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "„Měla jsem ho praštit pánvičkou.“ Ženu soudí za bodnutí partnera, který ji škrtil",
+      "link": "https://www.idnes.cz/pardubice/zpravy/soud-policie-pokus-vrazda-deti-nuz.A260914_093417_pardubice-zpravy_lank#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Situace s kontaminací na Šumavě není havarijní. Sanaci provede armáda, řekl Babiš",
+      "link": "https://www.idnes.cz/plzen/zpravy/sumava-chemicke-latky-nalez-kontaminace-situace.A260914_145109_plzen-zpravy_pkz#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Z Havlovy knihovny je 1. prezidentská. Nového ředitele vybere zřejmě v listopadu",
+      "link": "https://www.idnes.cz/zpravy/domaci/knihovna-vaclava-havla-novy-nazev-dagmar-dusek-cena-finance.A260914_132427_domaci_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Peking zpřísňuje pravidla pro drony. Ve městě nebude možné je ani legálně držet",
+      "link": "https://www.idnes.cz/ekonomika/zahranicni/drony-cina-peking-letadlo-havarie-mrakodrap-regulace.A260914_151907_eko-zahranicni_jla#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Němka se vydávala za fanynku Putina. Odhalila, jak Rusové verbují pro špionáž",
+      "link": "https://www.idnes.cz/zpravy/zahranicni/nemecko-rusko-sabotaz-nabor-investigace.A260914_142743_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
+    },
+    {
+      "title": "Vyhlásili jsme válku kratomu, řekl Babiš. Bude možné si ho koupit až od 21 let",
+      "link": "https://www.idnes.cz/zpravy/domaci/vlada-zprisneni-pravidel-u-kratomu-krery-bude-mozne-koupit-az-od-21-let.A260914_045312_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     },
     {
       "title": "Rusové cílili na vlak s Borisem Johnsonem a diplomaty. Jen náhodou odjeli dřív",
       "link": "https://www.idnes.cz/zpravy/zahranicni/ukrajina-rusko-utok-dron-vlak-boris-johnson-david-petraeus-carl-bildt.A260914_095953_zahranicni_kha#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Ukrajina nesmí útočit na ruské rafinerie, trvá na svém Trump. Kreml to vítá",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-usa-trump-ropa-zelenskyj-utoky.A260914_085839_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Piráti nařkli hnutí ANO z vydírání ostatních stran kvůli složení vedení Brna",
-      "link": "https://www.idnes.cz/volby/brno/komunalni-volby-2026-brno-narceni-pirati-ano-vydirani.A260914_113316_brno-volby_mos1#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Prezident Pavel je rád, že se obnovují jeho schůzky s premiérem Babišem",
-      "link": "https://www.idnes.cz/zpravy/domaci/jednani-pavel-babis-na-hrade-o-zahranicni-politice-valnem-shromazdeni-osn.A260914_054319_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Satelity odhalily škody na klíčovém ropovodu. Saúdy tlačí čas, trhu hrozí otřes",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/jemen-saudska-arabie-ropovod-ropa-husiove-utok.A260914_111231_zahranicni_dtt#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "AI firmy brzdí vývoj, investoři ale chtějí pokračovat. Do hry se vložil i Trump",
-      "link": "https://www.idnes.cz/ekonomika/zahranicni/openai-anthropic-ai.A260914_095442_eko-zahranicni_ven#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Do srážky osobních vlaků chybělo málo, zasáhl generální stop. Případ řeší policie",
-      "link": "https://www.idnes.cz/ceske-budejovice/zpravy/generalni-stop-vlak-strojvedouci-vlastec-obecne-ohrozeni.A260914_110238_budejovice-zpravy_khr#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Vláda jedná o přitvrzení vůči kratomu. Bude možné si ho koupit až od 21 let",
-      "link": "https://www.idnes.cz/zpravy/domaci/vlada-zprisneni-pravidel-u-kratomu-krery-bude-mozne-koupit-az-od-21-let.A260914_045312_domaci_kop#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Rychlostní limit ve městech? Pirátka Lněničková se opřela o zavádějící data",
-      "link": "https://www.idnes.cz/praha/zpravy/pirati-mapa-tricitka-doprava-nehody-praha-lnenickova-studie.A260914_095759_praha-zpravy_sahu#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Každá ruka dobrá. Rusové už mohou na frontě čerpat sílu z knížecích ostatků",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/rusko-ukrajina-valka-boje.A260914_100849_zahranicni_pluh/foto#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Těsný souboj o parlament ve Švédsku. Nacionalističtí Švédští demokraté oslabili",
-      "link": "https://www.idnes.cz/zpravy/zahranicni/svedsko-parlament-volby.A260914_081930_zahranicni_pluh#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
-    },
-    {
-      "title": "Turek prohrál soud s Hnutím Duha, musí se omluvit za výrok o „parazitech“",
-      "link": "https://www.idnes.cz/zpravy/domaci/filip-turek-hnuti-duha-parazit-soud-prohra.A260914_095725_domaci_dyn#utm_source=rss&utm_medium=feed&utm_campaign=zpravodaj%7Cekonomikah%7Ckultura%7Cfincentrum&utm_content=main"
     }
   ]
 }
